@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zin Soe Tun - Portfolio</title>
+    <link rel="shortcut icon" href="./avatar image.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="terminal">
+      <div class="terminal-header">
+        <span class="title" style="color: blue">Zin Soe Tun's Terminal</span>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-content">
+          <p class="command">Welcome to Zin Soe Tun's Portfolio</p>
+          <p class="command">Type "help" to get started.</p>
+          <div
+            id="search-container"
+            class="search-container"
+            style="display: none"
+          >
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search projects..."
+            />
+            <button id="search-btn">Search</button>
+          </div>
+          <div class="input-line">
+            <span class="prompt">zst@wd:~$</span>
+            <input type="text" id="command-input" autofocus />
+          </div>
+          <div id="output"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
