@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>Watch the demo video below:</p>
         <p><a href="https://www.youtube.com/watch?v=YqTdZu_xL5s" target="_blank">Youtube Link</a></p>
     `,
-       "laravel Course Management": `
+       "laravel course management": `
         <p><strong>Laravel Course Management  Project</strong></p>
         <p><a href="https://github.com/ZinSoeTun/master-mind-course-management" target="_blank">Github Link</a></p>
     `,
