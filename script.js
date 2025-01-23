@@ -109,7 +109,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       `,
   skills: "Skills: PHP, Laravel, Python, Java, React, Node, Express, Mongo, JavaScript, SQL, Mysql",
-projects: showProjectSearch,
+projects: function () {
+      showProjectSearch();
+    },
 contact: `<p>Email: <a href='mailto:tunzinsoe786@gmail.com'>tunzinsoe786@gmail.com</a> | Phone: +95 09988911436</p>
 <table>
   <tr>
@@ -156,7 +158,10 @@ contact: `<p>Email: <a href='mailto:tunzinsoe786@gmail.com'>tunzinsoe786@gmail.c
 </table>
 `,
   thanks: `<h1 class="simple-title">Thanks for visiting my porfolio ...<h1> 😊😊😊😊`,
-  clear: clearScreen,
+  clear: function () {
+      clearScreen();
+    },
+  },
   };
 
   function executeCommand(command) {
