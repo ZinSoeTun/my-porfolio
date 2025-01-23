@@ -35,6 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>Watch the demo video below:</p>
         <p><a href="https://www.youtube.com/watch?v=YqTdZu_xL5s" target="_blank">Youtube Link</a></p>
     `,
+       "laravel Course Management": `
+        <p><strong>Laravel Course Management  Project</strong></p>
+        <p><a href="https://github.com/ZinSoeTun/master-mind-course-management" target="_blank">Github Link</a></p>
+    `,
     "simple projects": `
     <h2 class="simple-title">These are simple and have only frondend...</h2>
  `,
@@ -104,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </a>
 
       `,
-    skills: "Skills: PHP, Laravel, Python, Java, React, JavaScript, SQL, Mysql",
+    skills: "Skills: PHP, Laravel, Python, Java,  React, Node, Express, Mongo, JavaScript, SQL, Mysql",
     projects: showProjectSearch,
     contact: `<p>Email: <a href='mailto:tunzinsoe786@gmail.com'>tunzinsoe786@gmail.com</a> | Phone: +95988911436"
       </p>
