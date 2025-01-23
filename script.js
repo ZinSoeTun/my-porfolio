@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `,
     skills: "Skills: PHP, Laravel, Python, Java,  React, Node, Express, Mongo, JavaScript, SQL, Mysql",
     projects: showProjectSearch,
-    contact: `<p>Email: <a href='mailto:tunzinsoe786@gmail.com'>tunzinsoe786@gmail.com</a> | Phone: +95988911436"
+    contact: `<p>Email: <a href='mailto:tunzinsoe786@gmail.com'>tunzinsoe786@gmail.com</a> | Phone: +95 09988911436`
       </p>
 <table>
   <tr>
