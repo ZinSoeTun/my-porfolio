@@ -161,9 +161,8 @@ contact: `<p>Email: <a href='mailto:tunzinsoe786@gmail.com'>tunzinsoe786@gmail.c
   clear: function () {
       clearScreen();
     },
-  },
   };
-
+  
   function executeCommand(command) {
     // Clear the output before showing the next command result
     output.innerHTML = "";
