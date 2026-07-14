@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generatedAt": "2026-07-14T06:45:00.146Z",
+    "generatedAt": "2026-07-14T09:45:03.960Z",
     "source": "github-actions-sync",
     "username": "ZinSoeTun",
     "totalRepositories": 54
   },
   "repositories": [
     {
-      "id": "my-porfolio",
+      "id": 852606621,
       "name": "my-porfolio",
       "title": "My Porfolio",
       "category": "JavaScript",
@@ -17,31 +17,14 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/my-porfolio",
       "homepage": "",
-      "updatedAt": "2026-07-14T06:30:51Z",
+      "updatedAt": "2026-07-14T09:44:51Z",
       "readme": {
         "status": "loaded",
-        "text": "Zin Soe Tun Portfolio\n\nA modern personal portfolio website built with HTML, CSS, and JavaScript. The site presents a polished developer profile, a responsive Bento-style interface, dark and light themes, and a live GitHub-powered project feed with README previews, caching, filtering, search, and pagination.\n\nOverview\n\nThis portfolio was redesigned to reflect a more experienced professional profile rather than an early-career showcase. Instead of relying on manually hard-coded project cards, the project section now loads public repositories from GitHub and turns them into interactive portfolio cards automatically.\n\nHighlights\n\nModern minimalist interface with Bento grid styling\n\nDark mode and light mode support\n\nResponsive layout for mobile, tablet, laptop, and desktop screens\n\nLive GitHub repository feed for public projects"
+        "text": "Zin Soe Tun Portfolio\n\nA modern personal portfolio website built with HTML, CSS, JavaScript, Bootstrap 5, and custom styling. The interface presents a polished full-stack developer profile through a responsive Bento-style layout, dark and light themes, and an auto-synced GitHub project feed designed for dependable public viewing on GitHub Pages.\n\nOverview\n\nThis portfolio was redesigned to reflect a more experienced professional profile rather than an early-career showcase. The project section no longer depends on manually maintained cards. Instead, public repositories are synchronized into a local JSON feed and rendered automatically as portfolio entries with searchable metadata and stored README highlights.\n\nHighlights\nModern minimalist interface with Bento grid styling\nDark mode and light mode support\nResponsive layout for mobile, tablet, laptop, desktop, and large-screen viewing\nAuto-synced GitHub repository feed for public projects\nStored..."
       }
     },
     {
-      "id": "react-laravel-e-commerce-project",
-      "name": "react-laravel-e-commerce-project",
-      "title": "React Laravel E Commerce Project",
-      "category": "JavaScript",
-      "tags": [
-        "JavaScript"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/react-laravel-e-commerce-project",
-      "homepage": "",
-      "updatedAt": "2026-07-13T08:04:06Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This project is my first project using react 18 for frontend and laravel 10 for backend...\n\nLanguages uses\n- HTML CSS BOOTSTRAP JQUERY REACT SASS LARAVEL\n\nThis project has two main parts..\n\nThey are User section and Admin session..\n\nI used React for User Session and Laravel for Admin Session..\n\nUser must log in and admin also log in because each session has different exist url route..\n\nFor user , If user is not logged in, user can search , view products and visit routes and if user is logged in user can search , view products and visit routes and also cart using and order with user's like..\n\nFor admin , Admin must log in if not admin is not used. so admin can insert products , view messages from user and arrange the order for each user\n\nMust be careful things\n- Don't open the file without internet\n- You can't log in user sesson and admin session at once . (if logged in as a user, don't log in as a admin without logging out as a user and also f..."
-      }
-    },
-    {
-      "id": "laravel-real-estate-project",
+      "id": 736922072,
       "name": "laravel-real-estate-project",
       "title": "Laravel Real Estate Project",
       "category": "Blade",
@@ -51,14 +34,35 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/laravel-real-estate-project",
       "homepage": "",
-      "updatedAt": "2026-07-13T08:02:26Z",
+      "updatedAt": "2026-07-13T08:08:44Z",
       "readme": {
         "status": "loaded",
-        "text": "This file is laravel-real-estate-project\n\nLanguage uses\n- HTML CSS BOOTSTRAP LARAVEL BLADE\n\nThis project is real estate website project using laravel 10.\n\nUser can like , view detail ....\n\nThis project has two main parts..\n\nThey are User section and Admin session..\n\nUser must log in and admin also log in because each session has different exist url route but you can log in user account and also log in admin account.(if you log in with user account ,\nyou won't see admin dashboard button and if you log in with admin acount , you will see admin dashboard button)\n\nFor user , If user is not logged in, user can search , view products and visit routes and if user is logged in user can search , view products and visit routes and also like house .\n\nFor admin , Admin must log in if not admin is not used. so admin can insert products , view messages from user and promote from user to admin"
+        "text": "This file is laravel-real-estate-project\nLanguage uses\nHTML CSS BOOTSTRAP LARAVEL BLADE\nThis project is real estate website project using laravel 10.\nUser can like , view detail ....\nThis project has two main parts..\nThey are User section and Admin session..\nUser must log in and admin also log in because each session has different exist url route but you can log in user account and also log in admin account.(if you log in with user account , \n  you won't see admin dashboard button and if you log in with admin acount , you will see admin dashboard button)\nFor user , If user is not logged in, user can search , view products and visit routes and if user is logged in user can search , view products and visit routes and also like house .\nFor admin , Admin must log in if not admin is not used. so admin can insert products , view messages from user and promote from user to admin\nMust be careful things\nDon't open the file without internet\nIf you want..."
       }
     },
     {
-      "id": "greatest_glory_football_club",
+      "id": 780417057,
+      "name": "react-laravel-e-commerce-project",
+      "title": "React Laravel E Commerce Project",
+      "category": "JavaScript",
+      "tags": [
+        "JavaScript",
+        "good-first-issues",
+        "hacktoberfest-accepted",
+        "laravel-framework",
+        "real-estate"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/react-laravel-e-commerce-project",
+      "homepage": "",
+      "updatedAt": "2026-07-13T08:04:21Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This project is my first project using react 18 for frontend and laravel 10 for backend...\nLanguages uses\nHTML CSS BOOTSTRAP JQUERY REACT SASS LARAVEL \nThis project has two main parts..\nThey are User section and Admin session..\nI used React for User Session and Laravel for Admin Session..\nUser must log in and admin also log in because each session has different exist url route..\nFor user , If user is not logged in, user can search , view products and visit routes and if user is logged in user can search , view products and visit routes and also cart using and order with user's like..\nFor admin , Admin must log in if not admin is not used. so admin can insert products , view messages from user and arrange the order for each user\nMust be careful things\nDon't open the file without internet\nYou can't log in user sesson and admin session at once . (if logged in as a user, don't log in as a admin without logging out as a user and also for reverse..)..."
+      }
+    },
+    {
+      "id": 1285747030,
       "name": "greatest_glory_football_club",
       "title": "Greatest Glory Football Club",
       "category": "JavaScript",
@@ -68,14 +72,14 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/greatest_glory_football_club",
       "homepage": "",
-      "updatedAt": "2026-07-01T07:10:21Z",
+      "updatedAt": "2026-07-01T07:10:32Z",
       "readme": {
         "status": "loaded",
-        "text": "Greatest Glory Football Club Website\n\nStatic football club website built with plain , , and .\n\nThis package gives you:\n\nA branded public website based on the provided club logo and its black-gold color palette\n\nAn content manager for club profile, fixtures, results, highlights, announcements, and media\n\nA demo mode so the site works immediately without any backend\n\nA sample Google Apps Script backend that stores records in a CSV file and uploads files to Google Drive\n\nA structure that can be published to GitHub Pages\n\nFiles\n\n: public club website\n\n: detail page for single records\n\n: browser-based CRUD panel\n\n: website and admin styles\n\n: shared data layer and page scripts\n\n: Google Apps Script sample API\n\n: deployment instructions for Google Drive mode\n\nQuick Start\n\nOpen to view the site.\n\nOpen to edit the demo data in your browser."
+        "text": "Greatest Glory Football Club Website\n\nStatic football club website built with plain HTML, CSS, and JavaScript.\n\nThis package gives you:\nA branded public website based on the provided club logo and its black-gold color palette\nAn admin.html content manager for club profile, fixtures, results, highlights, announcements, and media\nA demo localStorage mode so the site works immediately without any backend\nA sample Google Apps Script backend that stores records in a CSV file and uploads files to Google Drive\nA structure that can be published to GitHub Pages\n\nFiles\nindex.html: public club website\ndetail.html: detail page for single records\nadmin.html: browser-based CRUD panel\nassets/styles/: website and admin styles\nassets/scripts/: shared data layer and page scripts\nbackend/Code.gs: Google Apps Script sample API\nbackend/SETUP.md: deployment instructions for Google Drive mode"
       }
     },
     {
-      "id": "confession",
+      "id": 1086195525,
       "name": "confession",
       "title": "Confession",
       "category": "HTML",
@@ -85,14 +89,14 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/confession",
       "homepage": "",
-      "updatedAt": "2025-10-30T05:24:04Z",
+      "updatedAt": "2025-10-30T05:24:08Z",
       "readme": {
         "status": "empty",
         "text": ""
       }
     },
     {
-      "id": "laravel-e-commerce-laptop-project",
+      "id": 736920532,
       "name": "laravel-e-commerce-laptop-project",
       "title": "Laravel E Commerce Laptop Project",
       "category": "Blade",
@@ -102,14 +106,14 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/laravel-e-commerce-laptop-project",
       "homepage": "",
-      "updatedAt": "2025-01-27T04:59:43Z",
+      "updatedAt": "2025-01-27T04:59:46Z",
       "readme": {
         "status": "loaded",
-        "text": "This file is laravel-e-commerce-laptop-project\n\nLanguage uses\n- HTML CSS BOOTSTRAP LARAVEL BLADE JQUERY SASS ...\n\nThis project is e-commerce website project using laravel 10.\n\nThis project has two main parts..\n\nThey are User section and Admin session..\n\nUser must log in and admin also log in because each session has different exist url route but you can log in user account and also log in admin account.(if you log in with user account ,\nyou won't see admin dashboard button and if you log in with admin acount , you will see admin dashboard button)\n\nFor user , If user is not logged in, user can view products and visit routes and if user is logged in user can view products and visit routes and also order cart .\n\nFor admin , admin must log in if not admin is not used. so admin can insert products , view messages from user and promote from user to admin"
+        "text": "This file is laravel-e-commerce-laptop-project\nLanguage uses\nHTML CSS BOOTSTRAP LARAVEL BLADE JQUERY SASS ...\nThis project is e-commerce website project using laravel 10.\nThis project has two main parts..\nThey are User section and Admin session..\nUser must log in and admin also log in because each session has different exist url route but you can log in user account and also log in admin account.(if you log in with user account , \n  you won't see admin dashboard button and if you log in with admin acount , you will see admin dashboard button)\nFor user , If user is not logged in, user can view products and visit routes and if user is logged in user can view products and visit routes and also order cart .\nFor admin , admin must log in if not admin is not used. so admin can insert products , view messages from user and promote from user to admin\nMust be careful things\nDon't open the file without internet\nIf you want to run this file,  you first\nD..."
       }
     },
     {
-      "id": "master-mind-course-management",
+      "id": 902735941,
       "name": "master-mind-course-management",
       "title": "Master Mind Course Management",
       "category": "SCSS",
@@ -119,31 +123,32 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/master-mind-course-management",
       "homepage": "",
-      "updatedAt": "2024-12-14T04:00:34Z",
+      "updatedAt": "2024-12-14T04:00:38Z",
       "readme": {
         "status": "loaded",
-        "text": "Educational Website Documentation\n\nIntroduction\n\nThis project \"Master Mind\" is an educational website focused on course management. Built using Laravel 11 with Jetstream for authentication, the platform is designed to provide a seamless user experience for both learners and administrators.\n\nWebsite Overview\n\nThe site consists of two main roles:\n\nUser : Learners who join courses.\n\nAdmin : Administrators who manage content, categories, and courses.\n\nIt provides access to several pages, including, but not limited to:\n\nHome\n\nAbout\n\nCourses-(Category and Course pages)\n\nContact\n\nDefault Authentication Pages - Login, Register, etc.\n\nPage Details\n\n1. Home Page\n\nThis page is the landing page which welcomes users and invites them to join the platform.\n\nIt includes a welcome note and highlights of its salient features."
+        "text": "**Educational Website Documentation**\n\n**Introduction**\nThis project \"Master Mind\" is an educational website focused on course management. Built using **Laravel 11** with **Jetstream** for authentication, the platform is designed to provide a seamless user experience for both learners and administrators.\n\n**Website Overview**\nThe site consists of two main roles:\n**User**: Learners who  join courses.\n**Admin**: Administrators who manage content, categories, and courses.\n\nIt provides access to several pages, including, but not limited to:\n**Home**\n**About**\n**Courses-(Category and Course pages)**\n**Contact**\n**Default Authentication Pages** - Login, Register, etc.\n\n**Page Details**\n\n**1. Home Page**\nThis page is the landing page which welcomes users and invites them to join the platform.\nIt includes a welcome note and highlights of its salient features."
       }
     },
     {
-      "id": "ZinSoeTun",
+      "id": 780417994,
       "name": "ZinSoeTun",
       "title": "ZinSoeTun",
-      "category": "Repository",
+      "category": "config",
       "tags": [
-        "Repository"
+        "config",
+        "github-config"
       ],
       "summary": "Config files for my GitHub profile.",
       "github": "https://github.com/ZinSoeTun/ZinSoeTun",
-      "homepage": "",
-      "updatedAt": "2024-09-17T09:12:22Z",
+      "homepage": "https://github.com/ZinSoeTun",
+      "updatedAt": "2024-09-17T09:12:25Z",
       "readme": {
         "status": "loaded",
-        "text": "👋 Hi, I'm Zin Soe Tun!\n\n🚀 About Me\n\nI am a passionate Web Developer and Software Developer\n with a strong foundation in both frontend and backend\n technologies. With a keen eye for detail and a commitment\n to delivering high-quality code,I strive to create seamless\n and efficient web applications that solve real-world problems.\n\n👀 Passionate about\n\nI'm passionate about coding and learning new languages.\n I thrive in diverse environments and enjoy adapting to new challenges.\n\n🌱 What I'm Learning\n\nCurrently, I'm immersing myself in programming languages\n and enhancing my communication skills in English and Korean.\n\n💞️ Eager to\n\nI'm eager to collaborate with like-minded individuals who bring\n diverse perspectives and a positive outlook to every project.\n\n🌍 Let's Collaborate!\n\nI believe in working with dedication when it's time to focus, and\n valuing rest and reflection during downtime.I'm always open to\n advice on managing pressure and eage..."
+        "text": "<h1>👋 Hi, I'm Zin Soe Tun!</h1>\n<h2>🚀 About Me</h2> <br>\n<p>\n     I am a passionate Web Developer and Software Developer \n     with a strong foundation in both frontend and backend \n     technologies. With a keen eye for detail and a commitment\n     to delivering high-quality code,I strive to create seamless\n     and efficient web applications that solve real-world problems.\n</p><br>\n\n<h2>👀 Passionate about</h2> <br>\n <p>\n         I'm passionate about coding and learning new languages.\n         I thrive in diverse environments and enjoy adapting to new challenges.\n </p>\n\n<h2>🌱 What I'm Learning</h2> <br>\n <p>\n         Currently, I'm immersing myself in programming languages\n         and enhancing my communication skills in English and Korean.\n </p>\n\n<h2>💞️ Eager to</h2> <br>\n <p>\n          I'm eager to collaborate with like-minded individuals who bring\n          diverse perspectives and a positive outlook to every project.\n </p><br>"
       }
     },
     {
-      "id": "text-editor-program-java",
+      "id": 852147667,
       "name": "text-editor-program-java",
       "title": "Text Editor Program Java",
       "category": "Java",
@@ -153,14 +158,14 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/text-editor-program-java",
       "homepage": "",
-      "updatedAt": "2024-09-04T10:01:14Z",
+      "updatedAt": "2024-09-04T10:01:28Z",
       "readme": {
         "status": "loaded",
         "text": "This is a text editor program using java."
       }
     },
     {
-      "id": "clock-program-java",
+      "id": 852145771,
       "name": "clock-program-java",
       "title": "Clock Program Java",
       "category": "Java",
@@ -170,14 +175,14 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/clock-program-java",
       "homepage": "",
-      "updatedAt": "2024-09-04T09:57:04Z",
+      "updatedAt": "2024-09-04T09:57:48Z",
       "readme": {
         "status": "loaded",
         "text": "This is a clock program using java"
       }
     },
     {
-      "id": "java-encryption-program-java",
+      "id": 852142768,
       "name": "java-encryption-program-java",
       "title": "Java Encryption Program Java",
       "category": "Java",
@@ -187,14 +192,14 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/java-encryption-program-java",
       "homepage": "",
-      "updatedAt": "2024-09-04T09:53:29Z",
+      "updatedAt": "2024-09-04T09:53:41Z",
       "readme": {
         "status": "loaded",
-        "text": "This program is a encryption program using java ."
+        "text": "This program is a encryption program using java . <br>"
       }
     },
     {
-      "id": "laravel-chat-app",
+      "id": 798148371,
       "name": "laravel-chat-app",
       "title": "Laravel Chat App",
       "category": "PHP",
@@ -204,133 +209,14 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/laravel-chat-app",
       "homepage": "",
-      "updatedAt": "2024-09-04T09:03:36Z",
+      "updatedAt": "2024-09-04T09:03:39Z",
       "readme": {
         "status": "loaded",
-        "text": "This is a laravel chat app that using chatify package.\n\nThis project has many functions like user chat , message , images , notification ....\n\nThis project is used laravel 10, chatify package and laravel ui package\n\nIf you run this project,\n\n1 . you must have npm and php environment like xampp,wapp....\n\n2 . you must download this project file or you can git clone this repository\n\n3 . type composer install\n\n4 . then you must need to pusher account because this project is used pusher\n\n5 . then you will need some steps . If you want to know detail. Please visit this links\n\nfor pusher account https://pusher.com/laravel/ and https://pusher.com/tutorials/chat-laravel/\n\nfor chatify package https://chatify.munafio.com/ github https://github.com/munafio/chatify-demo\n\nGood luck for your try.😊😊😊😊😊😊😊"
+        "text": "This is a laravel chat app that using chatify package.<br>\nThis project has many functions like user chat , message , images , notification ....<br>\nThis project is used laravel 10, chatify package and laravel ui package<br>\nIf you run this project,<br>\n 1 . you must have npm and php environment like xampp,wapp....<br>\n 2 . you must download this project file or you can git clone this repository<br>\n 3 . type composer install<br>\n 4 . then you must need to pusher account because this project is used pusher <br>\n 5 . then you will need some steps . If you want to know detail. Please visit this links<br>\n    for pusher account https://pusher.com/laravel/ and https://pusher.com/tutorials/chat-laravel/<br>\n    for chatify package https://chatify.munafio.com/   github  https://github.com/munafio/chatify-demo<br>\nGood luck for your try.😊😊😊😊😊😊😊"
       }
     },
     {
-      "id": "python-stop-watch-program-py",
-      "name": "python-stop-watch-program-py",
-      "title": "Python Stop Watch Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/python-stop-watch-program-py",
-      "homepage": "",
-      "updatedAt": "2024-08-07T09:26:37Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a simple stop watch program using python\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "python-clock-program-py",
-      "name": "python-clock-program-py",
-      "title": "Python Clock Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/python-clock-program-py",
-      "homepage": "",
-      "updatedAt": "2024-08-07T09:22:50Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a real simple clock program using python\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "python-snake-game-program-py",
-      "name": "python-snake-game-program-py",
-      "title": "Python Snake Game Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/python-snake-game-program-py",
-      "homepage": "",
-      "updatedAt": "2024-08-07T09:18:42Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a snake game program using python\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "Java-GUI-java",
-      "name": "Java-GUI-java",
-      "title": "Java GUI Java",
-      "category": "Java",
-      "tags": [
-        "Java"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/Java-GUI-java",
-      "homepage": "",
-      "updatedAt": "2024-08-07T09:13:34Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This repo is for beginners who learn java GUI learning looking codes or learning from other souces to check what java GUI actually does and how to output the codes and run the codes...\n\nTo run the program,\n\nDownload the latest JAVA JDK in your computer.\nTo download the JAVA JDK. -> https://www.oracle.com/java/technologies/downloads/\nif you don't know how to download , please visit to -> https://www.youtube.com/watch?v=jPwrWjEwtrw\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code,Eclipse IDE or Intellij IDE etc...\nif you don't know how to open the file in each IDE ,\nplease visit to for VS code -> https://code.visualstudio.com/docs/languages/java\nplease visit to for Eclipse IDE -> https://eclipse.org/downloads/packages/release/kepler/sr1/eclipse-ide-java-developers\nplease visit to for Intellij IDE -> https://www.jetbrains.com/idea/download/?section=windows"
-      }
-    },
-    {
-      "id": "java-basic-to-advance-lectures-java",
-      "name": "java-basic-to-advance-lectures-java",
-      "title": "Java Basic To Advance Lectures Java",
-      "category": "Java",
-      "tags": [
-        "Java"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/java-basic-to-advance-lectures-java",
-      "homepage": "",
-      "updatedAt": "2024-08-07T09:06:30Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This repo is for beginners who learn java learning looking codes or learning from other souces to check what java actually does and how to output the codes and run the codes...\n\nTo run the program,\n\nDownload the latest JAVA JDK in your computer.\nTo download the JAVA JDK. -> https://www.oracle.com/java/technologies/downloads/\nif you don't know how to download , please visit to -> https://www.youtube.com/watch?v=jPwrWjEwtrw\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code,Eclipse IDE or Intellij IDE etc...\nif you don't know how to open the file in each IDE ,\nplease visit to for VS code -> https://code.visualstudio.com/docs/languages/java\nplease visit to for Eclipse IDE -> https://eclipse.org/downloads/packages/release/kepler/sr1/eclipse-ide-java-developers\nplease visit to for Intellij IDE -> https://www.jetbrains.com/idea/download/?section=windows"
-      }
-    },
-    {
-      "id": "Java-OOP-Lectures-java",
-      "name": "Java-OOP-Lectures-java",
-      "title": "Java OOP Lectures Java",
-      "category": "Java",
-      "tags": [
-        "Java"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/Java-OOP-Lectures-java",
-      "homepage": "",
-      "updatedAt": "2024-08-07T09:05:30Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This repo is for beginners who learn java learning looking codes or learning from other souces to check what java actually does and how to output the codes and run the codes...\n\nTo run the program,\n\nDownload the latest JAVA JDK in your computer.\nTo download the JAVA JDK. -> https://www.oracle.com/java/technologies/downloads/\nif you don't know how to download , please visit to -> https://www.youtube.com/watch?v=jPwrWjEwtrw\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code,Eclipse IDE or Intellij IDE etc...\nif you don't know how to open the file in each IDE ,\nplease visit to for VS code -> https://code.visualstudio.com/docs/languages/java\nplease visit to for Eclipse IDE -> https://eclipse.org/downloads/packages/release/kepler/sr1/eclipse-ide-java-developers\nplease visit to for Intellij IDE -> https://www.jetbrains.com/idea/download/?section=windows"
-      }
-    },
-    {
-      "id": "python-calculator-program-py",
-      "name": "python-calculator-program-py",
-      "title": "Python Calculator Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/python-calculator-program-py",
-      "homepage": "",
-      "updatedAt": "2024-08-05T14:15:13Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a simple calculator program using python\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "python-Tic-Tac-Toe-game-program-py",
+      "id": 838224810,
       "name": "python-Tic-Tac-Toe-game-program-py",
       "title": "Python Tic Tac Toe Game Program Py",
       "category": "Python",
@@ -340,14 +226,133 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/python-Tic-Tac-Toe-game-program-py",
       "homepage": "",
-      "updatedAt": "2024-08-05T07:57:52Z",
+      "updatedAt": "2024-08-07T09:26:52Z",
       "readme": {
         "status": "loaded",
-        "text": "This program is a simple game program using python which plays as a Tic Tac Toe game program\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
+        "text": "This program is a simple game program using python which plays as a Tic Tac Toe game program\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
       }
     },
     {
-      "id": "python-OOP-lectures-py",
+      "id": 839257997,
+      "name": "Java-OOP-Lectures-java",
+      "title": "Java OOP Lectures Java",
+      "category": "Java",
+      "tags": [
+        "Java"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/Java-OOP-Lectures-java",
+      "homepage": "",
+      "updatedAt": "2024-08-07T09:26:51Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This repo is for beginners who learn java learning looking codes or learning from other souces to check what java actually does and how to output the codes and run the codes...\n\nTo run the program,\nDownload the latest JAVA JDK in your computer.\n     To download the JAVA JDK. -> https://www.oracle.com/java/technologies/downloads/\n     if you don't know how to download , please visit to -> https://www.youtube.com/watch?v=jPwrWjEwtrw\ngit clone the repo or download the zip file\nOpen the file in VS Code,Eclipse IDE or Intellij IDE etc...\n     if you don't know how to open the file in each IDE ,\n     please visit to for VS code -> https://code.visualstudio.com/docs/languages/java\n     please visit to for Eclipse IDE -> https://eclipse.org/downloads/packages/release/kepler/sr1/eclipse-ide-java-developers\n     please visit to for Intellij IDE -> https://www.jetbrains.com/idea/download/?section=windows\nRun the file from GUI or CLI\n    If you write in n..."
+      }
+    },
+    {
+      "id": 838373874,
+      "name": "python-calculator-program-py",
+      "title": "Python Calculator Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/python-calculator-program-py",
+      "homepage": "",
+      "updatedAt": "2024-08-07T09:26:51Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is a simple calculator program using python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 839246227,
+      "name": "java-basic-to-advance-lectures-java",
+      "title": "Java Basic To Advance Lectures Java",
+      "category": "Java",
+      "tags": [
+        "Java"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/java-basic-to-advance-lectures-java",
+      "homepage": "",
+      "updatedAt": "2024-08-07T09:26:49Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This repo is for beginners who learn java learning looking codes or learning from other souces to check what java actually does and how to output the codes and run the codes...\n\nTo run the program,\nDownload the latest JAVA JDK in your computer.\n      To download the JAVA JDK. -> https://www.oracle.com/java/technologies/downloads/\n      if you don't know how to download , please visit to  -> https://www.youtube.com/watch?v=jPwrWjEwtrw\ngit clone the repo or download the zip file\nOpen the file in VS Code,Eclipse IDE or Intellij IDE etc...\n      if you don't know how to open the file in each IDE ,\n      please visit to for VS code -> https://code.visualstudio.com/docs/languages/java\n      please visit to for Eclipse IDE -> https://eclipse.org/downloads/packages/release/kepler/sr1/eclipse-ide-java-developers\n      please visit to for Intellij IDE -> https://www.jetbrains.com/idea/download/?section=windows\nRun the file from GUI or CLI\nIf you write i..."
+      }
+    },
+    {
+      "id": 839264353,
+      "name": "Java-GUI-java",
+      "title": "Java GUI Java",
+      "category": "Java",
+      "tags": [
+        "Java"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/Java-GUI-java",
+      "homepage": "",
+      "updatedAt": "2024-08-07T09:26:48Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This repo is for beginners who learn java GUI learning looking codes or learning from other souces to check what java GUI actually does and how to output the codes and run the codes...\n\nTo run the program,\nDownload the latest JAVA JDK in your computer.\n  To download the JAVA JDK. -> https://www.oracle.com/java/technologies/downloads/\n  if you don't know how to download , please visit to -> https://www.youtube.com/watch?v=jPwrWjEwtrw\ngit clone the repo or download the zip file\nOpen the file in VS Code,Eclipse IDE or Intellij IDE etc...\n    if you don't know how to open the file in each IDE ,\n     please visit to for VS code -> https://code.visualstudio.com/docs/languages/java\n     please visit to for Eclipse IDE -> https://eclipse.org/downloads/packages/release/kepler/sr1/eclipse-ide-java-developers\n     please visit to for Intellij IDE -> https://www.jetbrains.com/idea/download/?section=windows\nRun the file from GUI or CLI\nIf you write in node..."
+      }
+    },
+    {
+      "id": 839267860,
+      "name": "python-snake-game-program-py",
+      "title": "Python Snake Game Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/python-snake-game-program-py",
+      "homepage": "",
+      "updatedAt": "2024-08-07T09:26:47Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is a snake game program using python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 839269588,
+      "name": "python-clock-program-py",
+      "title": "Python Clock Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/python-clock-program-py",
+      "homepage": "",
+      "updatedAt": "2024-08-07T09:26:46Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is a real simple clock program using python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 839271441,
+      "name": "python-stop-watch-program-py",
+      "title": "Python Stop Watch Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/python-stop-watch-program-py",
+      "homepage": "",
+      "updatedAt": "2024-08-07T09:26:45Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is a simple stop watch program using python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 836152727,
       "name": "python-OOP-lectures-py",
       "title": "Python OOP Lectures Py",
       "category": "Python",
@@ -357,31 +362,14 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/python-OOP-lectures-py",
       "homepage": "",
-      "updatedAt": "2024-08-02T09:59:05Z",
+      "updatedAt": "2024-08-02T09:59:08Z",
       "readme": {
         "status": "loaded",
-        "text": "This repo is for beginners who learn python (OOP) learning looking codes or learning from other souces to check what python actually does and how to output the codes and run the codes...\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\nTo download the Python. -> https://www.python.org/downloads/\nif you don't know how to download , please visit to https://www.youtube.com/watch?v=6WrBOwTzXwg\nif you don't have \"pip\" Package after finished downloading prograss,\nplease visit to -> https://github.com/ZinSoeTun/python-menual-install-pip-package\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI\nI hope every beginner will get something from my repo . Good Luck everyone...🥰🥰🥰🥰🥰🥰🥰🥰"
+        "text": "This repo is for beginners who learn python (OOP) learning looking codes or learning from other souces to check what python actually does and how to output the codes and run the codes...\n\nTo run the program,\nDownload the latest PYTHON in your computer\n       To download the Python. -> https://www.python.org/downloads/\n       if you don't know how to download , please visit to https://www.youtube.com/watch?v=6WrBOwTzXwg\n       if you don't have \"pip\" Package after finished downloading prograss,\n       please visit to -> https://github.com/ZinSoeTun/python-menual-install-pip-package\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI\nI hope every beginner will get something from my repo . Good Luck everyone...🥰🥰🥰🥰🥰🥰🥰🥰"
       }
     },
     {
-      "id": "python-basic-to-advance-lectures-py",
-      "name": "python-basic-to-advance-lectures-py",
-      "title": "Python Basic To Advance Lectures Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/python-basic-to-advance-lectures-py",
-      "homepage": "",
-      "updatedAt": "2024-08-02T09:58:05Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This repo is for beginners who learn python learning looking codes or learning from other souces to check what python actually does and how to output the codes and run the codes...\n\nTo run the program,\n\nDownload the latest PYTHON in your computery.\nTo download the Python. -> https://www.python.org/downloads/\nif you don't know how to download , please visit to https://www.youtube.com/watch?v=6WrBOwTzXwg\nif you don't have \"pip\" Package after finished downloading prograss,\nplease visit to -> https://github.com/ZinSoeTun/python-menual-install-pip-package\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI\n\nI hope every beginner will get something from my repo.\nGood Luck everyone...🥰🥰🥰🥰🥰🥰🥰🥰"
-      }
-    },
-    {
-      "id": "python-menual-install-pip-package",
+      "id": 837137823,
       "name": "python-menual-install-pip-package",
       "title": "Python Menual Install Pip Package",
       "category": "Repository",
@@ -391,354 +379,31 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/python-menual-install-pip-package",
       "homepage": "",
-      "updatedAt": "2024-08-02T09:49:25Z",
+      "updatedAt": "2024-08-02T09:58:33Z",
       "readme": {
         "status": "loaded",
-        "text": "Since there is no folder, it indicates that might not have been installed correctly. Let's go through the steps to ensure is properly installed:\n\nRe-download and run the script :\n\nOpen your web browser and download the script from this link.\n\nSave the file to your Desktop.\n\nRun the script :\n\nOpen a command prompt and navigate to the Desktop directory by running:\n\nRun the script to install :\n\nCheck the installation directory :\n\nAfter running , check if a folder is created in the Python installation directory ( )please use your installation directory. It should contain the executable.\n\nAdd to the PATH environment variable :\n\nIf the folder exists, add it to your PATH:\n\nOpen the System Properties:\n\nRight-click on \"This PC\" or \"Computer\" on the desktop or in File Explorer.\n\nClick \"Properties.\"\n\nClick \"Advanced system settings.\""
+        "text": "Since there is no Scripts folder, it indicates that pip might not have been installed correctly. Let's go through the steps to ensure pip is properly installed:\n**Re-download and run the get-pip.py script**:\nOpen your web browser and download the get-pip.py script from this link.\nSave the file to your Desktop.\n**Run the get-pip.py script**:\nOpen a command prompt and navigate to the Desktop directory by running:\nRun the script to install pip:\n**Check the installation directory**:\nAfter running get-pip.py, check if a Scripts folder is created in the Python installation directory (C:\\Users\\xxx\\Desktop)please use your installation directory. It should contain the pip executable.\n**Add pip to the PATH environment variable**:\nIf the Scripts folder exists, add it to your PATH:\nOpen the System Properties:\nRight-click on \"This PC\" or \"Computer\" on the desktop or in File Explorer.\nClick \"Properties.\"\nClick \"Advanced system settings.\"\nClick \"Environment..."
       }
     },
     {
-      "id": "simple-banking-program-py",
-      "name": "simple-banking-program-py",
-      "title": "Simple Banking Program Py",
+      "id": 836147251,
+      "name": "python-basic-to-advance-lectures-py",
+      "title": "Python Basic To Advance Lectures Py",
       "category": "Python",
       "tags": [
         "Python"
       ],
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/simple-banking-program-py",
+      "github": "https://github.com/ZinSoeTun/python-basic-to-advance-lectures-py",
       "homepage": "",
-      "updatedAt": "2024-07-29T12:08:28Z",
+      "updatedAt": "2024-08-02T09:58:32Z",
       "readme": {
         "status": "loaded",
-        "text": "This is a simple banking program written by python without database which\n\nShows money\n\nDeposites the money\n\nWithdraws the money\n\nExits the program\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
+        "text": "This repo is for beginners who learn python learning looking codes or learning from other souces  to check what python actually does and how to output the codes and run the codes...\n\nTo run the program,\nDownload the latest PYTHON in your computery.\n       To download the Python. -> https://www.python.org/downloads/\n       if you don't know how to download , please visit to https://www.youtube.com/watch?v=6WrBOwTzXwg\n       if you don't have \"pip\" Package after finished downloading prograss,\n       please visit to -> https://github.com/ZinSoeTun/python-menual-install-pip-package\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI\n\nI hope every beginner will get something from my repo. \nGood Luck everyone...🥰🥰🥰🥰🥰🥰🥰🥰"
       }
     },
     {
-      "id": "concession-stand-program-py",
-      "name": "concession-stand-program-py",
-      "title": "Concession Stand Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/concession-stand-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:07:58Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is written by python which displays the concession stand that\na place where patrons can purchase snacks or food at a cinema, amusement park,\nzoo, aquarium, circus, fair, stadium, beach, swimming pool, concert, sporting event,\nor other entertainment venue\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "compound-interest-calculator-program-py",
-      "name": "compound-interest-calculator-program-py",
-      "title": "Compound Interest Calculator Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/compound-interest-calculator-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:07:29Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is written by python which calculates the compound interest\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "area-volume-calculation-of-triangle-program-py",
-      "name": "area-volume-calculation-of-triangle-program-py",
-      "title": "Area Volume Calculation Of Triangle Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/area-volume-calculation-of-triangle-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:07:03Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is written by python which calculates the area and volume of triangle\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "calculation-of-area-circumference-of-circle-and-hypotenuse-of-triangle-program-py",
-      "name": "calculation-of-area-circumference-of-circle-and-hypotenuse-of-triangle-program-py",
-      "title": "Calculation Of Area Circumference Of Circle And Hypotenuse Of Triangle Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/calculation-of-area-circumference-of-circle-and-hypotenuse-of-triangle-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:06:29Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is written by python which calcalates the area and circumference of circle & hypotenuse of triangle\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "credit-card-validator-program-py",
-      "name": "credit-card-validator-program-py",
-      "title": "Credit Card Validator Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/credit-card-validator-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:06:05Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is written by python which validates the credit card\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "countdown-timer-program-py",
-      "name": "countdown-timer-program-py",
-      "title": "Countdown Timer Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/countdown-timer-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:05:41Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a simple program written by python which uses as a countdown timer\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "mad-libs-program-py",
-      "name": "mad-libs-program-py",
-      "title": "Mad Libs Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/mad-libs-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:05:16Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a simple and the first exercise program written by python\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "quiz-game-program-py",
-      "name": "quiz-game-program-py",
-      "title": "Quiz Game Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/quiz-game-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:04:51Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a quiz game program written by python\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "rock-paper-scissors-game-program-py",
-      "name": "rock-paper-scissors-game-program-py",
-      "title": "Rock Paper Scissors Game Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/rock-paper-scissors-game-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:04:24Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a rock-paper-scissors game program written by python\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "simple-calculator-program-py",
-      "name": "simple-calculator-program-py",
-      "title": "Simple Calculator Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/simple-calculator-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:03:55Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a simple calculator program written by python\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "simple-email-slicing-program-py",
-      "name": "simple-email-slicing-program-py",
-      "title": "Simple Email Slicing Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/simple-email-slicing-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:03:27Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a simple slicing email program written by python which slicing the email\nYou can use anywhen if needed freely😘😘😘😘\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "simple-shopping-cart-program-py",
-      "name": "simple-shopping-cart-program-py",
-      "title": "Simple Shopping Cart Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/simple-shopping-cart-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:02:47Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a simple shopping cart program written by python\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "simple2-shopping-cart-program-py",
-      "name": "simple2-shopping-cart-program-py",
-      "title": "Simple2 Shopping Cart Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/simple2-shopping-cart-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:02:21Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is the second simple shopping cart program written by python\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "slot-machine-program-py",
-      "name": "slot-machine-program-py",
-      "title": "Slot Machine Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/slot-machine-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:01:58Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a slot machine program written by python which\n\nSpin the row\n\nShow the spin\n\nGet the pay-out\n\nExit the program\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "temperature-conversion-program-py",
-      "name": "temperature-conversion-program-py",
-      "title": "Temperature Conversion Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/temperature-conversion-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:01:05Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a temperature conversion program written by python\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "validating-username-program-py",
-      "name": "validating-username-program-py",
-      "title": "Validating Username Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/validating-username-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:00:35Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a program written by python which validates the username\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "weight-converter-program-py",
-      "name": "weight-converter-program-py",
-      "title": "Weight Converter Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/weight-converter-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T12:00:07Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is a weight converter program program written by python which change from lb to kg , from kg to lb\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "dice-rolling-program-py",
-      "name": "dice-rolling-program-py",
-      "title": "Dice Rolling Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/dice-rolling-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T11:59:29Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is dice-rolling program written by python\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "encryption-and-decryption-in-Python-program-py",
-      "name": "encryption-and-decryption-in-Python-program-py",
-      "title": "Encryption And Decryption In Python Program Py",
-      "category": "Python",
-      "tags": [
-        "Python"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/encryption-and-decryption-in-Python-program-py",
-      "homepage": "",
-      "updatedAt": "2024-07-29T11:58:52Z",
-      "readme": {
-        "status": "loaded",
-        "text": "This program is encryption and decryption program written by python how to encrypt and decrypt in Python\nYou can use if needed freely but don't use when handle the large datas\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
-      }
-    },
-    {
-      "id": "hangman-game-program-py",
+      "id": 835216079,
       "name": "hangman-game-program-py",
       "title": "Hangman Game Program Py",
       "category": "Python",
@@ -748,31 +413,354 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/hangman-game-program-py",
       "homepage": "",
-      "updatedAt": "2024-07-29T11:58:14Z",
+      "updatedAt": "2024-07-29T12:08:45Z",
       "readme": {
         "status": "loaded",
-        "text": "This program is hangman game program written by python which gusses the words happily 😍😍😍😍😍\n\nTo run the program,\n\nDownload the latest PYTHON in your computer\n\ngit clone the repo or download the zip file\n\nOpen the file in VS Code or Pycharm, etc...\n\nRun the file from GUI or CLI"
+        "text": "This program is hangman game program written by python which gusses the words happily 😍😍😍😍😍\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
       }
     },
     {
-      "id": "laravel-coding-test-project",
-      "name": "laravel-coding-test-project",
-      "title": "Laravel Coding Test Project",
-      "category": "PHP",
+      "id": 833204609,
+      "name": "simple-banking-program-py",
+      "title": "Simple Banking Program Py",
+      "category": "Python",
       "tags": [
-        "PHP"
+        "Python"
       ],
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/laravel-coding-test-project",
+      "github": "https://github.com/ZinSoeTun/simple-banking-program-py",
       "homepage": "",
-      "updatedAt": "2024-06-05T09:18:18Z",
+      "updatedAt": "2024-07-29T12:08:31Z",
       "readme": {
         "status": "loaded",
-        "text": "This project is laravel coding test project using following these functions.\n\nPlease create admin user login\n\nPlease create, edit, delete for member list\n\nPlease Create users , roles and permission to access member data\n\nThere are 3 roles admin, editor, viewer\n1.Admin roles can access all\n2.editor roles can access only edit but cannot create the member\n3.Viewer role can only view."
+        "text": "This is a simple banking program written by python without database which \nShows money\nDeposites the money\nWithdraws the money\nExits the program\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
       }
     },
     {
-      "id": "PHP-only-Router-Project",
+      "id": 833170968,
+      "name": "concession-stand-program-py",
+      "title": "Concession Stand Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/concession-stand-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:08:01Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is written by python which displays the concession stand that\na place where patrons can purchase snacks or food at a cinema, amusement park,\nzoo, aquarium, circus, fair, stadium, beach, swimming pool, concert, sporting event,\nor other entertainment venue\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833167100,
+      "name": "compound-interest-calculator-program-py",
+      "title": "Compound Interest Calculator Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/compound-interest-calculator-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:07:33Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is written by python which calculates the compound interest\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833054415,
+      "name": "area-volume-calculation-of-triangle-program-py",
+      "title": "Area Volume Calculation Of Triangle Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/area-volume-calculation-of-triangle-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:07:06Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is written by python which calculates the area and volume of triangle\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833047610,
+      "name": "calculation-of-area-circumference-of-circle-and-hypotenuse-of-triangle-program-py",
+      "title": "Calculation Of Area Circumference Of Circle And Hypotenuse Of Triangle Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/calculation-of-area-circumference-of-circle-and-hypotenuse-of-triangle-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:06:32Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is written by python which calcalates the area and circumference of circle & hypotenuse of triangle\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833180625,
+      "name": "credit-card-validator-program-py",
+      "title": "Credit Card Validator Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/credit-card-validator-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:06:08Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is written by python which validates the credit card\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833177609,
+      "name": "countdown-timer-program-py",
+      "title": "Countdown Timer Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/countdown-timer-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:05:44Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is a simple program written by python which uses as a countdown timer\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833187492,
+      "name": "mad-libs-program-py",
+      "title": "Mad Libs Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/mad-libs-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:05:18Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is a simple and the first exercise program written by python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833191129,
+      "name": "quiz-game-program-py",
+      "title": "Quiz Game Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/quiz-game-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:04:54Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is a quiz game program written by python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833193164,
+      "name": "rock-paper-scissors-game-program-py",
+      "title": "Rock Paper Scissors Game Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/rock-paper-scissors-game-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:04:27Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is a rock-paper-scissors game program written by python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833213532,
+      "name": "simple-calculator-program-py",
+      "title": "Simple Calculator Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/simple-calculator-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:03:58Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is a simple calculator program written by python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833215868,
+      "name": "simple-email-slicing-program-py",
+      "title": "Simple Email Slicing Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/simple-email-slicing-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:03:30Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is a simple slicing email program written by python which slicing the email \nYou can use anywhen if needed freely😘😘😘😘\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833218939,
+      "name": "simple-shopping-cart-program-py",
+      "title": "Simple Shopping Cart Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/simple-shopping-cart-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:02:50Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is a simple shopping cart program written by python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833221367,
+      "name": "simple2-shopping-cart-program-py",
+      "title": "Simple2 Shopping Cart Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/simple2-shopping-cart-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:02:24Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is the second simple shopping cart program written by python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833223530,
+      "name": "slot-machine-program-py",
+      "title": "Slot Machine Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/slot-machine-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:02:02Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is a slot machine program written by python which\nSpin the row\nShow the spin\nGet the pay-out\nExit the program\n \nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833226089,
+      "name": "temperature-conversion-program-py",
+      "title": "Temperature Conversion Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/temperature-conversion-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:01:08Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is a temperature conversion program written by python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833228079,
+      "name": "validating-username-program-py",
+      "title": "Validating Username Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/validating-username-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:00:38Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is  a program written by python which validates the username\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833229837,
+      "name": "weight-converter-program-py",
+      "title": "Weight Converter Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/weight-converter-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T12:00:10Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is a weight converter program program written by python which change from lb to kg , from kg to lb\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833231642,
+      "name": "dice-rolling-program-py",
+      "title": "Dice Rolling Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/dice-rolling-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T11:59:31Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is dice-rolling program written by python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 833233207,
+      "name": "encryption-and-decryption-in-Python-program-py",
+      "title": "Encryption And Decryption In Python Program Py",
+      "category": "Python",
+      "tags": [
+        "Python"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/encryption-and-decryption-in-Python-program-py",
+      "homepage": "",
+      "updatedAt": "2024-07-29T11:58:56Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This program is encryption and decryption program written by python how to encrypt and decrypt in Python\nYou can use if needed freely but don't use when handle the large datas\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+      }
+    },
+    {
+      "id": 808090748,
       "name": "PHP-only-Router-Project",
       "title": "PHP Only Router Project",
       "category": "PHP",
@@ -782,14 +770,31 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/PHP-only-Router-Project",
       "homepage": "",
-      "updatedAt": "2024-05-30T11:15:58Z",
+      "updatedAt": "2024-07-24T14:21:27Z",
       "readme": {
         "status": "loaded",
-        "text": "PHP-only-Router-Project\n\nThis project is project that using PHP only without any framework for PHP Routing system."
+        "text": "PHP-only-Router-Project\nThis project is project that using PHP only without any framework for PHP Routing system."
       }
     },
     {
-      "id": "my-html-css-only-project",
+      "id": 810739497,
+      "name": "laravel-coding-test-project",
+      "title": "Laravel Coding Test Project",
+      "category": "PHP",
+      "tags": [
+        "PHP"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/laravel-coding-test-project",
+      "homepage": "",
+      "updatedAt": "2024-06-05T09:18:22Z",
+      "readme": {
+        "status": "loaded",
+        "text": "This project is laravel coding test project using following these functions.\nPlease create admin user login\nPlease create, edit, delete for member list\nPlease Create users , roles and permission to access member data\n\nThere are 3 roles admin, editor, viewer\n1.Admin roles can access all\n2.editor roles can access only edit but cannot create the member\n3.Viewer role can only view."
+      }
+    },
+    {
+      "id": 780904778,
       "name": "my-html-css-only-project",
       "title": "My Html Css Only Project",
       "category": "HTML",
@@ -799,82 +804,14 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/my-html-css-only-project",
       "homepage": "",
-      "updatedAt": "2024-04-02T12:31:02Z",
+      "updatedAt": "2024-04-23T10:08:33Z",
       "readme": {
         "status": "loaded",
         "text": "my-html-css-only-project"
       }
     },
     {
-      "id": "PHP-Authentication-Project",
-      "name": "PHP-Authentication-Project",
-      "title": "PHP Authentication Project",
-      "category": "PHP",
-      "tags": [
-        "PHP"
-      ],
-      "summary": "This is my first PHP project. This project has only PHP.",
-      "github": "https://github.com/ZinSoeTun/PHP-Authentication-Project",
-      "homepage": "",
-      "updatedAt": "2024-04-02T06:30:07Z",
-      "readme": {
-        "status": "loaded",
-        "text": "PHP-Authentication-Project\n\nThis is my first PHP project. This project has only PHP.\nthis has also html css js bootstrap but these files are included in php files\nso you can't live view in github page if you click github page link https://zinsoetun.github.io/PHP-Authentication-Project/\nyou will redirect to Readme.md file"
-      }
-    },
-    {
-      "id": "JS-music-player-project",
-      "name": "JS-music-player-project",
-      "title": "JS Music Player Project",
-      "category": "JavaScript",
-      "tags": [
-        "JavaScript"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/JS-music-player-project",
-      "homepage": "",
-      "updatedAt": "2024-04-02T06:23:27Z",
-      "readme": {
-        "status": "loaded",
-        "text": "-This is a JS-music-player-project file .\n-Languages uses are HTML , CSS , JS , Bootstrap\n-You try to open the music if you have time , I'm sure you'll be happy"
-      }
-    },
-    {
-      "id": "JS-Rock-Paper-Scissor-Game-Project",
-      "name": "JS-Rock-Paper-Scissor-Game-Project",
-      "title": "JS Rock Paper Scissor Game Project",
-      "category": "HTML",
-      "tags": [
-        "HTML"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/JS-Rock-Paper-Scissor-Game-Project",
-      "homepage": "",
-      "updatedAt": "2024-04-02T06:21:51Z",
-      "readme": {
-        "status": "loaded",
-        "text": "-This is a JS-Rock-Paper-Scissor-Game-Project file .\n-Languages uses are HTML , CSS , JS , Bootstrap\n-You try to play if you have time , I'm sure you'll be happy"
-      }
-    },
-    {
-      "id": "JS-Quizz-Project",
-      "name": "JS-Quizz-Project",
-      "title": "JS Quizz Project",
-      "category": "JavaScript",
-      "tags": [
-        "JavaScript"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/JS-Quizz-Project",
-      "homepage": "",
-      "updatedAt": "2024-04-02T06:18:26Z",
-      "readme": {
-        "status": "loaded",
-        "text": "-This is a simple JS-Quizz-Project\nproject file .\n-Language uses are HTML , CSS , JS , Bootstrap"
-      }
-    },
-    {
-      "id": "JS-calculation-project",
+      "id": 724588403,
       "name": "JS-calculation-project",
       "title": "JS Calculation Project",
       "category": "HTML",
@@ -884,14 +821,31 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/JS-calculation-project",
       "homepage": "",
-      "updatedAt": "2024-04-02T06:17:27Z",
+      "updatedAt": "2024-04-01T13:29:29Z",
       "readme": {
         "status": "loaded",
         "text": "-This is a simple calculator project file .\n-Language uses are HTML , CSS , JS , Bootstrap\n-You can use this calculator like real calculator almost perfectly."
       }
     },
     {
-      "id": "JS-Stop-Watch-Project",
+      "id": 736928618,
+      "name": "PHP-Authentication-Project",
+      "title": "PHP Authentication Project",
+      "category": "PHP",
+      "tags": [
+        "PHP"
+      ],
+      "summary": "This is my first PHP project. This project has only PHP.",
+      "github": "https://github.com/ZinSoeTun/PHP-Authentication-Project",
+      "homepage": "",
+      "updatedAt": "2024-04-01T13:25:14Z",
+      "readme": {
+        "status": "loaded",
+        "text": "PHP-Authentication-Project\nThis is my first PHP project. This project has only PHP.\nthis has also html css js bootstrap but these files are included in php files\nso you can't live view in github page if you click github page link https://zinsoetun.github.io/PHP-Authentication-Project/\nyou will redirect to   Readme.md file"
+      }
+    },
+    {
+      "id": 736927442,
       "name": "JS-Stop-Watch-Project",
       "title": "JS Stop Watch Project",
       "category": "JavaScript",
@@ -901,14 +855,65 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/JS-Stop-Watch-Project",
       "homepage": "",
-      "updatedAt": "2024-04-02T06:16:38Z",
+      "updatedAt": "2024-04-01T13:24:44Z",
       "readme": {
         "status": "loaded",
         "text": "-This is a JS-Stop-Watch-Project file .\n-Language uses are HTML , CSS , JS , Bootstrap\n-You can use this Stop-Watch like real Stop-Watch almost perfectly."
       }
     },
     {
-      "id": "Bootstrap-programming-project",
+      "id": 736926640,
+      "name": "JS-Quizz-Project",
+      "title": "JS Quizz Project",
+      "category": "JavaScript",
+      "tags": [
+        "JavaScript"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/JS-Quizz-Project",
+      "homepage": "",
+      "updatedAt": "2024-04-01T13:24:07Z",
+      "readme": {
+        "status": "loaded",
+        "text": "-This is a simple JS-Quizz-Project\n project file .\n-Language uses are HTML , CSS , JS , Bootstrap"
+      }
+    },
+    {
+      "id": 736925662,
+      "name": "JS-Rock-Paper-Scissor-Game-Project",
+      "title": "JS Rock Paper Scissor Game Project",
+      "category": "HTML",
+      "tags": [
+        "HTML"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/JS-Rock-Paper-Scissor-Game-Project",
+      "homepage": "",
+      "updatedAt": "2024-04-01T13:23:15Z",
+      "readme": {
+        "status": "loaded",
+        "text": "-This is a JS-Rock-Paper-Scissor-Game-Project file .\n-Languages uses are HTML , CSS , JS , Bootstrap\n-You try to play if you have time , I'm sure you'll be happy"
+      }
+    },
+    {
+      "id": 736923598,
+      "name": "JS-music-player-project",
+      "title": "JS Music Player Project",
+      "category": "JavaScript",
+      "tags": [
+        "JavaScript"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/JS-music-player-project",
+      "homepage": "",
+      "updatedAt": "2024-04-01T13:22:26Z",
+      "readme": {
+        "status": "loaded",
+        "text": "-This is a JS-music-player-project file .\n-Languages uses are HTML , CSS , JS , Bootstrap \n-You try to open the music if you have time , I'm sure you'll be happy"
+      }
+    },
+    {
+      "id": 724585878,
       "name": "Bootstrap-programming-project",
       "title": "Bootstrap Programming Project",
       "category": "HTML",
@@ -918,10 +923,10 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/Bootstrap-programming-project",
       "homepage": "",
-      "updatedAt": "2024-04-02T06:12:13Z",
+      "updatedAt": "2024-04-01T13:18:58Z",
       "readme": {
         "status": "loaded",
-        "text": "Bootstrap-programming-project is dynamic project copying w3school website without backend . so you can't type search bar...\n\nLanguages uses\n-HTML CSS JS"
+        "text": "Bootstrap-programming-project is dynamic project copying w3school website without backend . so you can't type search bar...\nLanguages uses\n       -HTML  CSS JS"
       }
     }
   ]
