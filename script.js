@@ -316,12 +316,20 @@ document.addEventListener('DOMContentLoaded', () => {
     projectSummary.textContent = message;
   }
 
+  function isPersistableReadmeState(readmeState) {
+    return (
+      readmeState &&
+      typeof readmeState === 'object' &&
+      ['loaded', 'empty'].includes(readmeState.status)
+    );
+  }
+
   function hydrateReadmeCache() {
     try {
       const cachedReadmes = JSON.parse(localStorage.getItem(README_CACHE_KEY) || '{}');
 
       Object.entries(cachedReadmes).forEach(([repositoryName, readmeState]) => {
-        if (readmeState && typeof readmeState === 'object') {
+        if (isPersistableReadmeState(readmeState)) {
           readmeCache.set(repositoryName, readmeState);
         }
       });
@@ -331,7 +339,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function persistReadmeCache() {
-    localStorage.setItem(README_CACHE_KEY, JSON.stringify(Object.fromEntries(readmeCache.entries())));
+    const persistedEntries = Object.fromEntries(
+      [...readmeCache.entries()].filter(([, readmeState]) => isPersistableReadmeState(readmeState))
+    );
+
+    localStorage.setItem(README_CACHE_KEY, JSON.stringify(persistedEntries));
   }
 
   function setRepositoryCount(count) {
@@ -757,9 +769,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  async function fetchRepositoryReadme(repositoryName) {
+  async function fetchRepositoryReadme(repositoryName, options = {}) {
+    const { force = false } = options;
+
     if (readmeCache.has(repositoryName)) {
-      return readmeCache.get(repositoryName);
+      const cachedReadme = readmeCache.get(repositoryName);
+
+      if (!force && cachedReadme?.status !== 'error') {
+        return cachedReadme;
+      }
+
+      readmeCache.delete(repositoryName);
+      persistReadmeCache();
     }
 
     try {
@@ -788,10 +809,9 @@ document.addEventListener('DOMContentLoaded', () => {
       persistReadmeCache();
       return result;
     } catch (error) {
-      const errorResult = { status: 'error', text: '' };
-      readmeCache.set(repositoryName, errorResult);
+      readmeCache.delete(repositoryName);
       persistReadmeCache();
-      return errorResult;
+      return { status: 'error', text: '' };
     }
   }
 
@@ -817,7 +837,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     return `
       <p class="project-detail-note">
-        README details could not be loaded right now. Please try again in a moment.
+        README details are temporarily unavailable. Please close and reopen Details to retry, or open the repository on GitHub.
       </p>
     `;
   }
@@ -846,13 +866,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const cachedReadme = readmeCache.get(repositoryName);
 
-    if (cachedReadme) {
+    if (cachedReadme && cachedReadme.status !== 'error') {
       panel.innerHTML = renderReadmeState(repository, cachedReadme);
       return;
     }
 
+    if (cachedReadme?.status === 'error') {
+      readmeCache.delete(repositoryName);
+      persistReadmeCache();
+    }
+
     panel.innerHTML = '<p class="project-detail-note">Loading README details...</p>';
-    const readmeState = await fetchRepositoryReadme(repositoryName);
+    const readmeState = await fetchRepositoryReadme(repositoryName, { force: true });
 
     if (button.getAttribute('aria-expanded') === 'true') {
       panel.innerHTML = renderReadmeState(repository, readmeState);
