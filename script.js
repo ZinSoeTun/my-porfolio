@@ -16,13 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const commandShortcuts = document.getElementById('command-shortcuts');
 
   const GITHUB_USERNAME = 'ZinSoeTun';
-  const GITHUB_API_BASE = 'https://api.github.com';
-  const README_PREVIEW_LIMIT = 960;
+  const PROJECT_FEED_PATH = './data/projects.json';
   const PROJECTS_PER_PAGE = 6;
-  const REPOSITORY_CACHE_KEY = 'portfolio-github-repositories-v1';
-  const README_CACHE_KEY = 'portfolio-github-readmes-v1';
-  const REPOSITORY_CACHE_META_KEY = 'portfolio-github-repositories-meta-v1';
-  const REPOSITORY_CACHE_TTL_MS = 1000 * 60 * 30;
+  const REPOSITORY_CACHE_KEY = 'portfolio-synced-repositories-v2';
+  const REPOSITORY_CACHE_META_KEY = 'portfolio-synced-repositories-meta-v2';
 
   const skills = [
     {
@@ -95,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ];
 
-  const readmeCache = new Map();
   let repositories = [];
   let repositoryLookup = new Map();
   let filterOrder = ['All'];
@@ -109,8 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
       <ul>
         <li><code>about</code> - Read a concise professional introduction.</li>
         <li><code>skills</code> - Review the main technical capabilities.</li>
-        <li><code>projects</code> - Jump to the live GitHub portfolio feed.</li>
-        <li><code>refresh</code> - Reload repositories from GitHub.</li>
+        <li><code>projects</code> - Jump to the auto-synced GitHub portfolio feed.</li>
+        <li><code>refresh</code> - Reload the latest synced repository feed.</li>
         <li><code>contact</code> - View contact details and social links.</li>
         <li><code>theme</code> - Switch between dark mode and light mode.</li>
         <li><code>clear</code> - Reset this command panel.</li>
@@ -138,29 +134,30 @@ document.addEventListener('DOMContentLoaded', () => {
       return `
         <p><strong>GitHub portfolio ready</strong></p>
         <p>
-          This section is powered by the live GitHub repository feed. Use search, filters, and Details to inspect README previews.
+          This section is powered by an auto-synced GitHub repository feed. Use search, filters, and Details to inspect README highlights.
         </p>
       `;
     },
     refresh: async () => {
-      const result = await fetchRepositories();
+      const result = await fetchRepositories({ force: true });
+
       if (result.ok) {
         return `
           <p><strong>Repository feed refreshed</strong></p>
-          <p>${escapeHtml(String(result.count))} public repositories were loaded from GitHub.</p>
+          <p>${escapeHtml(String(result.count))} public repositories were loaded from the synced portfolio feed.</p>
         `;
       }
 
       if (result.cached) {
         return `
-          <p><strong>Cached repository feed active</strong></p>
-          <p>The live GitHub refresh was unavailable, so the most recent cached repositories are being shown instead.</p>
+          <p><strong>Cached portfolio feed active</strong></p>
+          <p>The newest synced feed was unavailable, so the most recent cached project data is being shown instead.</p>
         `;
       }
 
       return `
         <p><strong>Refresh failed</strong></p>
-        <p>GitHub data could not be loaded right now. Please try again in a moment.</p>
+        <p>The synced project feed could not be loaded right now. Please try again in a moment.</p>
       `;
     },
     contact: () => `
@@ -178,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function escapeHtml(value = '') {
-    return value
+    return String(value)
       .replaceAll('&', '&amp;')
       .replaceAll('<', '&lt;')
       .replaceAll('>', '&gt;')
@@ -247,62 +244,44 @@ document.addEventListener('DOMContentLoaded', () => {
     return /^https?:\/\//i.test(value) ? value : `https://${value}`;
   }
 
-  function getRepositoryCategory(repo) {
-    return repo.language || repo.topics?.[0] || 'Repository';
+  function normalizeReadmeState(readmeState) {
+    const state = readmeState && typeof readmeState === 'object' ? readmeState : {};
+    const status = ['loaded', 'empty'].includes(state.status) ? state.status : 'empty';
+    const text = typeof state.text === 'string' ? state.text.trim() : '';
+
+    return {
+      status: status === 'loaded' && !text ? 'empty' : status,
+      text
+    };
   }
 
-  function getRepositoryTags(repo) {
-    return [...new Set([repo.language, ...(repo.topics || [])].filter(Boolean))].slice(0, 4);
-  }
+  function mapFeedRepository(repository) {
+    const source = repository && typeof repository === 'object' ? repository : {};
+    const title = typeof source.title === 'string' && source.title.trim()
+      ? source.title.trim()
+      : formatRepositoryName(source.name || 'repository');
+    const category = typeof source.category === 'string' && source.category.trim()
+      ? source.category.trim()
+      : 'Repository';
+    const tags = Array.isArray(source.tags)
+      ? [...new Set(source.tags.filter(Boolean).map((tag) => String(tag).trim()).filter(Boolean))].slice(0, 6)
+      : [];
 
-  function stripMarkdown(markdown = '') {
-    return markdown
-      .replace(/```[\s\S]*?```/g, ' ')
-      .replace(/`([^`]+)`/g, '$1')
-      .replace(/!\[[^\]]*]\([^)]*\)/g, ' ')
-      .replace(/\[([^\]]+)]\([^)]*\)/g, '$1')
-      .replace(/^#{1,6}\s*/gm, '')
-      .replace(/^\s*[-*+]\s+/gm, '')
-      .replace(/^\s*\d+\.\s+/gm, '')
-      .replace(/^>\s?/gm, '')
-      .replace(/\|/g, ' ')
-      .replace(/\r/g, '')
-      .replace(/\n{3,}/g, '\n\n')
-      .trim();
-  }
-
-  function extractReadmePreview(markdown = '') {
-    const stripped = stripMarkdown(markdown);
-
-    if (!stripped) {
-      return '';
-    }
-
-    const paragraphs = stripped
-      .split(/\n{2,}/)
-      .map((paragraph) => paragraph.trim())
-      .filter(Boolean);
-
-    let preview = '';
-
-    for (const paragraph of paragraphs) {
-      const candidate = preview ? `${preview}\n\n${paragraph}` : paragraph;
-
-      if (candidate.length > README_PREVIEW_LIMIT) {
-        const remaining = Math.max(README_PREVIEW_LIMIT - preview.length - (preview ? 2 : 0), 0);
-        const shortened = paragraph.slice(0, Math.max(remaining - 3, 0)).trim();
-        preview = `${preview}${preview ? '\n\n' : ''}${shortened}...`;
-        break;
-      }
-
-      preview = candidate;
-
-      if (preview.length > README_PREVIEW_LIMIT * 0.85) {
-        break;
-      }
-    }
-
-    return preview || stripped.slice(0, README_PREVIEW_LIMIT).trim();
+    return {
+      id: source.id || source.name || title.toLowerCase().replace(/\s+/g, '-'),
+      name: source.name || title.toLowerCase().replace(/\s+/g, '-'),
+      title,
+      category,
+      tags: tags.length ? tags : [category],
+      summary:
+        typeof source.summary === 'string' && source.summary.trim()
+          ? source.summary.trim()
+          : 'A repository summary is not exposed here yet. Open Details to review the synced README highlights.',
+      github: source.github || `https://github.com/${GITHUB_USERNAME}/${source.name || ''}`,
+      homepage: normalizeHomepageUrl(source.homepage || ''),
+      updatedAt: source.updatedAt || source.updated_at || '',
+      readme: normalizeReadmeState(source.readme)
+    };
   }
 
   function renderReadmeHtml(text = '') {
@@ -314,36 +293,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function setProjectSummary(message) {
     projectSummary.textContent = message;
-  }
-
-  function isPersistableReadmeState(readmeState) {
-    return (
-      readmeState &&
-      typeof readmeState === 'object' &&
-      ['loaded', 'empty'].includes(readmeState.status)
-    );
-  }
-
-  function hydrateReadmeCache() {
-    try {
-      const cachedReadmes = JSON.parse(localStorage.getItem(README_CACHE_KEY) || '{}');
-
-      Object.entries(cachedReadmes).forEach(([repositoryName, readmeState]) => {
-        if (isPersistableReadmeState(readmeState)) {
-          readmeCache.set(repositoryName, readmeState);
-        }
-      });
-    } catch (error) {
-      readmeCache.clear();
-    }
-  }
-
-  function persistReadmeCache() {
-    const persistedEntries = Object.fromEntries(
-      [...readmeCache.entries()].filter(([, readmeState]) => isPersistableReadmeState(readmeState))
-    );
-
-    localStorage.setItem(README_CACHE_KEY, JSON.stringify(persistedEntries));
   }
 
   function setRepositoryCount(count) {
@@ -411,14 +360,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const query = projectSearch.value.trim().toLowerCase();
 
     return repositories.filter((repository) => {
-      const readmePreview = readmeCache.get(repository.name)?.text || '';
       const haystack = [
         repository.title,
         repository.name,
         repository.category,
         repository.summary,
         ...repository.tags,
-        readmePreview
+        repository.readme.text
       ]
         .join(' ')
         .toLowerCase();
@@ -437,6 +385,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalPages = getTotalPages(visibleRepositories.length);
     currentPage = Math.min(Math.max(currentPage, 1), totalPages);
     const startIndex = (currentPage - 1) * PROJECTS_PER_PAGE;
+
     return {
       items: visibleRepositories.slice(startIndex, startIndex + PROJECTS_PER_PAGE),
       startIndex,
@@ -491,7 +440,7 @@ document.addEventListener('DOMContentLoaded', () => {
       projectPagination.hidden = true;
       projectGrid.innerHTML = `
         <div class="project-empty">
-          GitHub repositories are not available right now. Please use <strong>Refresh Feed</strong> to try again.
+          The synced GitHub portfolio feed is not available right now. Please use <strong>Refresh Feed</strong> to try again.
         </div>
       `;
       return;
@@ -535,13 +484,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 type="button"
                 data-readme-toggle="${escapeHtml(repository.name)}"
                 aria-expanded="false"
-                aria-controls="project-details-${repository.id}"
+                aria-controls="project-details-${escapeHtml(String(repository.id))}"
               >
                 <span>Details</span>
                 <span class="project-disclosure-arrow" aria-hidden="true"></span>
               </button>
             </div>
-            <div class="project-details" id="project-details-${repository.id}" hidden></div>
+            <div class="project-details" id="project-details-${escapeHtml(String(repository.id))}" hidden></div>
           </article>
         `
       )
@@ -600,25 +549,6 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
   }
 
-  function mapRepository(repo) {
-    const category = getRepositoryCategory(repo);
-    const tags = getRepositoryTags(repo);
-
-    return {
-      id: repo.id,
-      name: repo.name,
-      title: formatRepositoryName(repo.name),
-      category,
-      tags: tags.length ? tags : ['Repository'],
-      summary:
-        repo.description?.trim() ||
-        'A repository summary is not exposed here yet. Open Details to preview the README content.',
-      github: repo.html_url,
-      homepage: normalizeHomepageUrl(repo.homepage || ''),
-      updatedAt: repo.updated_at
-    };
-  }
-
   function applyRepositoryState(nextRepositories) {
     repositories = nextRepositories;
     repositoryLookup = new Map(repositories.map((repository) => [repository.name, repository]));
@@ -628,12 +558,13 @@ document.addEventListener('DOMContentLoaded', () => {
     setRepositoryCount(repositories.length);
   }
 
-  function persistRepositoryCache() {
+  function persistRepositoryCache(meta = {}) {
     localStorage.setItem(REPOSITORY_CACHE_KEY, JSON.stringify(repositories));
     localStorage.setItem(
       REPOSITORY_CACHE_META_KEY,
       JSON.stringify({
-        syncedAt: new Date().toISOString()
+        generatedAt: meta.generatedAt || new Date().toISOString(),
+        source: meta.source || 'synced-feed'
       })
     );
   }
@@ -646,7 +577,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return false;
       }
 
-      applyRepositoryState(cachedRepositories);
+      applyRepositoryState(cachedRepositories.map(mapFeedRepository));
       return true;
     } catch (error) {
       return false;
@@ -662,90 +593,54 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  function hasFreshRepositoryCache() {
-    const { syncedAt } = getRepositoryCacheMeta();
-
-    if (!syncedAt) {
-      return false;
-    }
-
-    const age = Date.now() - new Date(syncedAt).getTime();
-    return Number.isFinite(age) && age >= 0 && age < REPOSITORY_CACHE_TTL_MS;
-  }
-
   async function fetchRepositories(options = {}) {
     const { force = false } = options;
-
-    if (!force && repositories.length && hasFreshRepositoryCache()) {
-      const { syncedAt } = getRepositoryCacheMeta();
-      setProjectSummary(
-        `Showing the most recent cached GitHub repository feed${syncedAt ? ` from ${formatSyncTime(syncedAt)}` : ''}.`
-      );
-      renderFilters();
-      renderProjects();
-      return { ok: true, count: repositories.length, cached: true };
-    }
+    const requestUrl = force ? `${PROJECT_FEED_PATH}?v=${Date.now()}` : PROJECT_FEED_PATH;
 
     isLoadingRepositories = true;
-    setProjectSummary('Loading public repositories directly from GitHub...');
+    setProjectSummary('Loading the auto-synced portfolio feed...');
     setProjectRefreshState();
     renderFilters();
     renderProjects();
 
     try {
-      const response = await fetch(
-        `${GITHUB_API_BASE}/users/${GITHUB_USERNAME}/repos?per_page=100&sort=updated`,
-        {
-          headers: {
-            Accept: 'application/vnd.github+json'
-          }
-        }
-      );
+      const response = await fetch(requestUrl, {
+        cache: 'no-store'
+      });
 
       if (!response.ok) {
-        const resetAtValue = response.headers.get('x-ratelimit-reset');
-        const resetAt = resetAtValue
-          ? new Intl.DateTimeFormat('en-US', {
-              hour: 'numeric',
-              minute: '2-digit'
-            }).format(new Date(Number(resetAtValue) * 1000))
-          : '';
-        const error = new Error(`Repository request failed with status ${response.status}`);
-        error.status = response.status;
-        error.responseHeaders = {
-          remaining: response.headers.get('x-ratelimit-remaining'),
-          resetAt
-        };
-        throw error;
+        throw new Error(`Repository feed request failed with status ${response.status}`);
       }
 
       const payload = await response.json();
+      const nextRepositories = Array.isArray(payload.repositories)
+        ? payload.repositories.map(mapFeedRepository)
+        : [];
+      const generatedAt = payload?.meta?.generatedAt || new Date().toISOString();
 
       applyRepositoryState(
-        payload
-          .filter((repo) => !repo.fork && !repo.archived)
-          .map(mapRepository)
-          .sort((first, second) => new Date(second.updatedAt) - new Date(first.updatedAt))
+        nextRepositories.sort((first, second) => new Date(second.updatedAt) - new Date(first.updatedAt))
       );
-      persistRepositoryCache();
-      const syncedAtLabel = formatSyncTime(getRepositoryCacheMeta().syncedAt);
+      persistRepositoryCache({
+        generatedAt,
+        source: payload?.meta?.source || 'synced-feed'
+      });
       setProjectSummary(
-        `${repositories.length} public repositories are synced from GitHub${syncedAtLabel ? ` as of ${syncedAtLabel}` : ''}. Open Details to preview README content on demand.`
+        `${repositories.length} public repositories are available in the auto-synced GitHub feed${generatedAt ? ` as of ${formatSyncTime(generatedAt)}` : ''}. Open Details to review stored README highlights.`
       );
 
-      return { ok: true, count: repositories.length };
+      return {
+        ok: true,
+        count: repositories.length,
+        generatedAt
+      };
     } catch (error) {
       const restored = restoreRepositoryCache();
-      const { syncedAt } = getRepositoryCacheMeta();
-      const remaining = error?.responseHeaders?.remaining ?? null;
-      const resetAt = error?.responseHeaders?.resetAt ?? '';
-      const isRateLimited = error?.status === 403 && remaining === '0';
+      const { generatedAt } = getRepositoryCacheMeta();
 
       if (restored) {
         setProjectSummary(
-          isRateLimited
-            ? `GitHub rate limit is temporarily reached${resetAt ? ` until about ${resetAt}` : ''}, so the most recent cached repository feed is being shown.`
-            : `Live GitHub refresh is unavailable right now, so the most recent cached repository feed${syncedAt ? ` from ${formatSyncTime(syncedAt)}` : ''} is being shown.`
+          `The latest synced feed could not be reached right now, so the most recent cached portfolio data${generatedAt ? ` from ${formatSyncTime(generatedAt)}` : ''} is being shown.`
         );
         return { ok: false, cached: true, error };
       }
@@ -755,11 +650,7 @@ document.addEventListener('DOMContentLoaded', () => {
       filterOrder = ['All'];
       activeFilter = 'All';
       setRepositoryCount(0);
-      setProjectSummary(
-        isRateLimited
-          ? `GitHub rate limit is temporarily reached${resetAt ? ` until about ${resetAt}` : ''}. Please try Refresh Feed later.`
-          : 'GitHub repositories could not be loaded right now. Please use Refresh Feed and try again.'
-      );
+      setProjectSummary('The synced project feed could not be loaded right now. Please use Refresh Feed to try again.');
       return { ok: false, cached: false, error };
     } finally {
       isLoadingRepositories = false;
@@ -769,57 +660,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  async function fetchRepositoryReadme(repositoryName, options = {}) {
-    const { force = false } = options;
-
-    if (readmeCache.has(repositoryName)) {
-      const cachedReadme = readmeCache.get(repositoryName);
-
-      if (!force && cachedReadme?.status !== 'error') {
-        return cachedReadme;
-      }
-
-      readmeCache.delete(repositoryName);
-      persistReadmeCache();
-    }
-
-    try {
-      const response = await fetch(`${GITHUB_API_BASE}/repos/${GITHUB_USERNAME}/${repositoryName}/readme`, {
-        headers: {
-          Accept: 'application/vnd.github.raw+json'
-        }
-      });
-
-      if (response.status === 404) {
-        const emptyResult = { status: 'empty', text: '' };
-        readmeCache.set(repositoryName, emptyResult);
-        persistReadmeCache();
-        return emptyResult;
-      }
-
-      if (!response.ok) {
-        throw new Error(`README request failed with status ${response.status}`);
-      }
-
-      const markdown = await response.text();
-      const preview = extractReadmePreview(markdown);
-      const result = preview ? { status: 'loaded', text: preview } : { status: 'empty', text: '' };
-
-      readmeCache.set(repositoryName, result);
-      persistReadmeCache();
-      return result;
-    } catch (error) {
-      readmeCache.delete(repositoryName);
-      persistReadmeCache();
-      return { status: 'error', text: '' };
-    }
-  }
-
-  function renderReadmeState(repository, readmeState) {
-    if (readmeState.status === 'loaded') {
+  function renderReadmeState(repository) {
+    if (repository.readme.status === 'loaded') {
       return `
         <div class="project-readme">
-          ${renderReadmeHtml(readmeState.text)}
+          ${renderReadmeHtml(repository.readme.text)}
           <a class="project-inline-link" href="${escapeHtml(repository.github)}#readme" target="_blank" rel="noreferrer">
             Open full README on GitHub
           </a>
@@ -827,22 +672,14 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
     }
 
-    if (readmeState.status === 'empty') {
-      return `
-        <p class="project-detail-note">
-          This repository does not expose README details yet. You can still open the full repository on GitHub.
-        </p>
-      `;
-    }
-
     return `
       <p class="project-detail-note">
-        README details are temporarily unavailable. Please close and reopen Details to retry, or open the repository on GitHub.
+        This repository does not expose synced README details yet. You can still open the full repository on GitHub.
       </p>
     `;
   }
 
-  async function handleReadmeToggle(button) {
+  function handleReadmeToggle(button) {
     const repositoryName = button.dataset.readmeToggle;
     const repository = repositoryLookup.get(repositoryName);
     const panel = document.getElementById(button.getAttribute('aria-controls'));
@@ -863,25 +700,7 @@ document.addEventListener('DOMContentLoaded', () => {
     button.setAttribute('aria-expanded', 'true');
     button.classList.add('is-open');
     panel.hidden = false;
-
-    const cachedReadme = readmeCache.get(repositoryName);
-
-    if (cachedReadme && cachedReadme.status !== 'error') {
-      panel.innerHTML = renderReadmeState(repository, cachedReadme);
-      return;
-    }
-
-    if (cachedReadme?.status === 'error') {
-      readmeCache.delete(repositoryName);
-      persistReadmeCache();
-    }
-
-    panel.innerHTML = '<p class="project-detail-note">Loading README details...</p>';
-    const readmeState = await fetchRepositoryReadme(repositoryName, { force: true });
-
-    if (button.getAttribute('aria-expanded') === 'true') {
-      panel.innerHTML = renderReadmeState(repository, readmeState);
-    }
+    panel.innerHTML = renderReadmeState(repository);
   }
 
   function setCommandOutput(content) {
@@ -933,12 +752,12 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         command: 'projects',
         title: 'Projects',
-        description: 'Jump to the GitHub project feed.'
+        description: 'Jump to the synced GitHub project feed.'
       },
       {
         command: 'refresh',
         title: 'Refresh',
-        description: 'Reload repositories from GitHub.'
+        description: 'Reload the latest synced repository feed.'
       }
     ];
 
@@ -1001,14 +820,14 @@ document.addEventListener('DOMContentLoaded', () => {
     projectGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
-  projectGrid.addEventListener('click', async (event) => {
+  projectGrid.addEventListener('click', (event) => {
     const toggleButton = event.target.closest('[data-readme-toggle]');
 
     if (!toggleButton) {
       return;
     }
 
-    await handleReadmeToggle(toggleButton);
+    handleReadmeToggle(toggleButton);
   });
 
   commandInput.addEventListener('keydown', (event) => {
@@ -1030,21 +849,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   applyTheme(detectInitialTheme());
-  hydrateReadmeCache();
   renderSkills();
   renderSocialLinks();
   renderCommandShortcuts();
   setCommandOutput(commandResponses.help());
+
   const restoredCache = restoreRepositoryCache();
+
   if (restoredCache) {
-    const { syncedAt } = getRepositoryCacheMeta();
+    const { generatedAt } = getRepositoryCacheMeta();
     setProjectSummary(
-      `Showing the most recent cached GitHub repository feed${syncedAt ? ` from ${formatSyncTime(syncedAt)}` : ''}.`
+      `Showing the most recent cached portfolio feed${generatedAt ? ` from ${formatSyncTime(generatedAt)}` : ''}.`
     );
     renderFilters();
     renderProjects();
   }
-  if (!restoredCache || !hasFreshRepositoryCache()) {
-    void fetchRepositories({ force: !restoredCache });
-  }
+
+  void fetchRepositories({ force: true });
 });
