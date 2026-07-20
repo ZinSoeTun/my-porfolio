@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-19T23:12:22.410Z",
+    "generatedAt": "2026-07-20T00:14:21.583Z",
     "source": "github-actions-sync",
     "username": "ZinSoeTun",
     "totalRepositories": 54
@@ -17,7 +17,7 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/my-porfolio",
       "homepage": "",
-      "updatedAt": "2026-07-19T22:09:40Z",
+      "updatedAt": "2026-07-19T23:12:27Z",
       "readme": {
         "status": "loaded",
         "text": "Zin Soe Tun Portfolio\n\nA modern personal portfolio website built with HTML, CSS, JavaScript, Bootstrap 5, and custom styling. The interface presents a polished full-stack developer profile through a responsive Bento-style layout, dark and light themes, and an auto-synced GitHub project feed designed for dependable public viewing on GitHub Pages.\n\nOverview\n\nThis portfolio was redesigned to reflect a more experienced professional profile rather than an early-career showcase. The project section no longer depends on manually maintained cards. Instead, public repositories are synchronized into a local JSON feed and rendered automatically as portfolio entries with searchable metadata and stored README highlights.\n\nHighlights\nModern minimalist interface with Bento grid styling\nDark mode and light mode support\nResponsive layout for mobile, tablet, laptop, desktop, and large-screen viewing\nAuto-synced GitHub repository feed for public projects\nStored..."
@@ -228,8 +228,8 @@
       "homepage": "",
       "updatedAt": "2024-08-07T09:26:52Z",
       "readme": {
-        "status": "loaded",
-        "text": "This program is a simple game program using python which plays as a Tic Tac Toe game program\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+        "status": "empty",
+        "text": ""
       }
     },
     {
@@ -262,8 +262,8 @@
       "homepage": "",
       "updatedAt": "2024-08-07T09:26:51Z",
       "readme": {
-        "status": "loaded",
-        "text": "This program is a simple calculator program using python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+        "status": "empty",
+        "text": ""
       }
     },
     {
@@ -415,8 +415,8 @@
       "homepage": "",
       "updatedAt": "2024-07-29T12:08:45Z",
       "readme": {
-        "status": "loaded",
-        "text": "This program is hangman game program written by python which gusses the words happily 😍😍😍😍😍\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+        "status": "empty",
+        "text": ""
       }
     },
     {
@@ -449,8 +449,8 @@
       "homepage": "",
       "updatedAt": "2024-07-29T12:08:01Z",
       "readme": {
-        "status": "loaded",
-        "text": "This program is written by python which displays the concession stand that\na place where patrons can purchase snacks or food at a cinema, amusement park,\nzoo, aquarium, circus, fair, stadium, beach, swimming pool, concert, sporting event,\nor other entertainment venue\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+        "status": "empty",
+        "text": ""
       }
     },
     {
@@ -466,8 +466,8 @@
       "homepage": "",
       "updatedAt": "2024-07-29T12:07:33Z",
       "readme": {
-        "status": "loaded",
-        "text": "This program is written by python which calculates the compound interest\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+        "status": "empty",
+        "text": ""
       }
     },
     {
@@ -500,8 +500,8 @@
       "homepage": "",
       "updatedAt": "2024-07-29T12:06:32Z",
       "readme": {
-        "status": "loaded",
-        "text": "This program is written by python which calcalates the area and circumference of circle & hypotenuse of triangle\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+        "status": "empty",
+        "text": ""
       }
     },
     {
@@ -534,8 +534,8 @@
       "homepage": "",
       "updatedAt": "2024-07-29T12:05:44Z",
       "readme": {
-        "status": "loaded",
-        "text": "This program is a simple program written by python which uses as a countdown timer\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+        "status": "empty",
+        "text": ""
       }
     },
     {
@@ -551,8 +551,8 @@
       "homepage": "",
       "updatedAt": "2024-07-29T12:05:18Z",
       "readme": {
-        "status": "loaded",
-        "text": "This program is a simple and the first exercise program written by python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+        "status": "empty",
+        "text": ""
       }
     },
     {
@@ -619,8 +619,8 @@
       "homepage": "",
       "updatedAt": "2024-07-29T12:03:30Z",
       "readme": {
-        "status": "loaded",
-        "text": "This program is a simple slicing email program written by python which slicing the email \nYou can use anywhen if needed freely😘😘😘😘\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+        "status": "empty",
+        "text": ""
       }
     },
     {
@@ -670,8 +670,8 @@
       "homepage": "",
       "updatedAt": "2024-07-29T12:02:02Z",
       "readme": {
-        "status": "loaded",
-        "text": "This program is a slot machine program written by python which\nSpin the row\nShow the spin\nGet the pay-out\nExit the program\n \nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+        "status": "empty",
+        "text": ""
       }
     },
     {
@@ -687,8 +687,8 @@
       "homepage": "",
       "updatedAt": "2024-07-29T12:01:08Z",
       "readme": {
-        "status": "loaded",
-        "text": "This program is a temperature conversion program written by python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+        "status": "empty",
+        "text": ""
       }
     },
     {
@@ -738,8 +738,8 @@
       "homepage": "",
       "updatedAt": "2024-07-29T11:59:31Z",
       "readme": {
-        "status": "loaded",
-        "text": "This program is dice-rolling program written by python\n\nTo run the program,\nDownload the latest PYTHON in your computer\ngit clone the repo or download the zip file\nOpen the file in VS Code or Pycharm, etc...\nRun the file from GUI or CLI"
+        "status": "empty",
+        "text": ""
       }
     },
     {
@@ -789,8 +789,8 @@
       "homepage": "",
       "updatedAt": "2024-06-05T09:18:22Z",
       "readme": {
-        "status": "loaded",
-        "text": "This project is laravel coding test project using following these functions.\nPlease create admin user login\nPlease create, edit, delete for member list\nPlease Create users , roles and permission to access member data\n\nThere are 3 roles admin, editor, viewer\n1.Admin roles can access all\n2.editor roles can access only edit but cannot create the member\n3.Viewer role can only view."
+        "status": "empty",
+        "text": ""
       }
     },
     {
@@ -806,8 +806,8 @@
       "homepage": "",
       "updatedAt": "2024-04-23T10:08:33Z",
       "readme": {
-        "status": "loaded",
-        "text": "my-html-css-only-project"
+        "status": "empty",
+        "text": ""
       }
     },
     {
