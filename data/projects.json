@@ -1,11 +1,28 @@
 {
   "meta": {
-    "generatedAt": "2026-11-03T06:48:41.674Z",
+    "generatedAt": "2026-11-03T15:09:14.435Z",
     "source": "github-actions-sync",
     "username": "ZinSoeTun",
     "totalRepositories": 54
   },
   "repositories": [
+    {
+      "id": 852606621,
+      "name": "my-porfolio",
+      "title": "My Porfolio",
+      "category": "JavaScript",
+      "tags": [
+        "JavaScript"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/my-porfolio",
+      "homepage": "",
+      "updatedAt": "2026-11-03T06:48:47Z",
+      "readme": {
+        "status": "loaded",
+        "text": "Zin Soe Tun Portfolio\n\nA modern personal portfolio website built with HTML, CSS, JavaScript, Bootstrap 5, and custom styling. The interface presents a polished full-stack developer profile through a responsive Bento-style layout, dark and light themes, and an auto-synced GitHub project feed designed for dependable public viewing on GitHub Pages.\n\nOverview\n\nThis portfolio was redesigned to reflect a more experienced professional profile rather than an early-career showcase. The project section no longer depends on manually maintained cards. Instead, public repositories are synchronized into a local JSON feed and rendered automatically as portfolio entries with searchable metadata and stored README highlights.\n\nHighlights\nModern minimalist interface with Bento grid styling\nDark mode and light mode support\nResponsive layout for mobile, tablet, laptop, desktop, and large-screen viewing\nAuto-synced GitHub repository feed for public projects\nStored..."
+      }
+    },
     {
       "id": 780417994,
       "name": "ZinSoeTun",
@@ -60,23 +77,6 @@
       "readme": {
         "status": "loaded",
         "text": "This project is my first project using react 18 for frontend and laravel 10 for backend...\nLanguages uses\nHTML CSS BOOTSTRAP JQUERY REACT SASS LARAVEL \nThis project has two main parts..\nThey are User section and Admin session..\nI used React for User Session and Laravel for Admin Session..\nUser must log in and admin also log in because each session has different exist url route..\nFor user , If user is not logged in, user can search , view products and visit routes and if user is logged in user can search , view products and visit routes and also cart using and order with user's like..\nFor admin , Admin must log in if not admin is not used. so admin can insert products , view messages from user and arrange the order for each user\nMust be careful things\nDon't open the file without internet\nYou can't log in user sesson and admin session at once . (if logged in as a user, don't log in as a admin without logging out as a user and also for reverse..)..."
-      }
-    },
-    {
-      "id": 852606621,
-      "name": "my-porfolio",
-      "title": "My Porfolio",
-      "category": "JavaScript",
-      "tags": [
-        "JavaScript"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/my-porfolio",
-      "homepage": "",
-      "updatedAt": "2026-11-02T23:31:29Z",
-      "readme": {
-        "status": "loaded",
-        "text": "Zin Soe Tun Portfolio\n\nA modern personal portfolio website built with HTML, CSS, JavaScript, Bootstrap 5, and custom styling. The interface presents a polished full-stack developer profile through a responsive Bento-style layout, dark and light themes, and an auto-synced GitHub project feed designed for dependable public viewing on GitHub Pages.\n\nOverview\n\nThis portfolio was redesigned to reflect a more experienced professional profile rather than an early-career showcase. The project section no longer depends on manually maintained cards. Instead, public repositories are synchronized into a local JSON feed and rendered automatically as portfolio entries with searchable metadata and stored README highlights.\n\nHighlights\nModern minimalist interface with Bento grid styling\nDark mode and light mode support\nResponsive layout for mobile, tablet, laptop, desktop, and large-screen viewing\nAuto-synced GitHub repository feed for public projects\nStored..."
       }
     },
     {
