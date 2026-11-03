@@ -1,26 +1,27 @@
 {
   "meta": {
-    "generatedAt": "2026-11-02T23:31:23.497Z",
+    "generatedAt": "2026-11-03T06:48:41.674Z",
     "source": "github-actions-sync",
     "username": "ZinSoeTun",
     "totalRepositories": 54
   },
   "repositories": [
     {
-      "id": 852606621,
-      "name": "my-porfolio",
-      "title": "My Porfolio",
-      "category": "JavaScript",
+      "id": 780417994,
+      "name": "ZinSoeTun",
+      "title": "ZinSoeTun",
+      "category": "config",
       "tags": [
-        "JavaScript"
+        "config",
+        "github-config"
       ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/my-porfolio",
-      "homepage": "",
-      "updatedAt": "2026-11-02T15:55:23Z",
+      "summary": "Config files for my GitHub profile.",
+      "github": "https://github.com/ZinSoeTun/ZinSoeTun",
+      "homepage": "https://github.com/ZinSoeTun",
+      "updatedAt": "2026-11-03T06:29:59Z",
       "readme": {
         "status": "loaded",
-        "text": "Zin Soe Tun Portfolio\n\nA modern personal portfolio website built with HTML, CSS, JavaScript, Bootstrap 5, and custom styling. The interface presents a polished full-stack developer profile through a responsive Bento-style layout, dark and light themes, and an auto-synced GitHub project feed designed for dependable public viewing on GitHub Pages.\n\nOverview\n\nThis portfolio was redesigned to reflect a more experienced professional profile rather than an early-career showcase. The project section no longer depends on manually maintained cards. Instead, public repositories are synchronized into a local JSON feed and rendered automatically as portfolio entries with searchable metadata and stored README highlights.\n\nHighlights\nModern minimalist interface with Bento grid styling\nDark mode and light mode support\nResponsive layout for mobile, tablet, laptop, desktop, and large-screen viewing\nAuto-synced GitHub repository feed for public projects\nStored..."
+        "text": "<div align=\"center\">\n\nHi, I'm Zin Soe Tun 👋\n\nFull-Stack Web Developer   Laravel & PHP Specialist\n\n**Building Business Software, Web Applications & Scalable Digital Solutions.**\n\nI design and develop practical software solutions that help businesses improve their operations, streamline workflows, and manage data efficiently.\n\n<br>\n\n<a href=\"https://zinsoetun.github.io/my-porfolio/\">\n  <img src=\"https://img.shields.io/badge/Portfolio-Visit_My_Portfolio-2563EB?style=for-the-badge&logo=firefox&logoColor=white\" />\n</a>\n<a href=\"https://github.com/ZinSoeTun\">\n  <img src=\"https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white\" />\n</a>\n<a href=\"mailto:tunzinsoe786@gmail.com\">\n  <img src=\"https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white\" />\n</a>"
       }
     },
     {
@@ -34,7 +35,7 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/laravel-real-estate-project",
       "homepage": "",
-      "updatedAt": "2026-07-13T08:08:44Z",
+      "updatedAt": "2026-11-03T06:09:31Z",
       "readme": {
         "status": "loaded",
         "text": "This file is laravel-real-estate-project\nLanguage uses\nHTML CSS BOOTSTRAP LARAVEL BLADE\nThis project is real estate website project using laravel 10.\nUser can like , view detail ....\nThis project has two main parts..\nThey are User section and Admin session..\nUser must log in and admin also log in because each session has different exist url route but you can log in user account and also log in admin account.(if you log in with user account , \n  you won't see admin dashboard button and if you log in with admin acount , you will see admin dashboard button)\nFor user , If user is not logged in, user can search , view products and visit routes and if user is logged in user can search , view products and visit routes and also like house .\nFor admin , Admin must log in if not admin is not used. so admin can insert products , view messages from user and promote from user to admin\nMust be careful things\nDon't open the file without internet\nIf you want..."
@@ -55,10 +56,27 @@
       "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
       "github": "https://github.com/ZinSoeTun/react-laravel-e-commerce-project",
       "homepage": "",
-      "updatedAt": "2026-07-13T08:04:21Z",
+      "updatedAt": "2026-11-03T05:59:20Z",
       "readme": {
         "status": "loaded",
         "text": "This project is my first project using react 18 for frontend and laravel 10 for backend...\nLanguages uses\nHTML CSS BOOTSTRAP JQUERY REACT SASS LARAVEL \nThis project has two main parts..\nThey are User section and Admin session..\nI used React for User Session and Laravel for Admin Session..\nUser must log in and admin also log in because each session has different exist url route..\nFor user , If user is not logged in, user can search , view products and visit routes and if user is logged in user can search , view products and visit routes and also cart using and order with user's like..\nFor admin , Admin must log in if not admin is not used. so admin can insert products , view messages from user and arrange the order for each user\nMust be careful things\nDon't open the file without internet\nYou can't log in user sesson and admin session at once . (if logged in as a user, don't log in as a admin without logging out as a user and also for reverse..)..."
+      }
+    },
+    {
+      "id": 852606621,
+      "name": "my-porfolio",
+      "title": "My Porfolio",
+      "category": "JavaScript",
+      "tags": [
+        "JavaScript"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/my-porfolio",
+      "homepage": "",
+      "updatedAt": "2026-11-02T23:31:29Z",
+      "readme": {
+        "status": "loaded",
+        "text": "Zin Soe Tun Portfolio\n\nA modern personal portfolio website built with HTML, CSS, JavaScript, Bootstrap 5, and custom styling. The interface presents a polished full-stack developer profile through a responsive Bento-style layout, dark and light themes, and an auto-synced GitHub project feed designed for dependable public viewing on GitHub Pages.\n\nOverview\n\nThis portfolio was redesigned to reflect a more experienced professional profile rather than an early-career showcase. The project section no longer depends on manually maintained cards. Instead, public repositories are synchronized into a local JSON feed and rendered automatically as portfolio entries with searchable metadata and stored README highlights.\n\nHighlights\nModern minimalist interface with Bento grid styling\nDark mode and light mode support\nResponsive layout for mobile, tablet, laptop, desktop, and large-screen viewing\nAuto-synced GitHub repository feed for public projects\nStored..."
       }
     },
     {
@@ -127,24 +145,6 @@
       "readme": {
         "status": "loaded",
         "text": "**Educational Website Documentation**\n\n**Introduction**\nThis project \"Master Mind\" is an educational website focused on course management. Built using **Laravel 11** with **Jetstream** for authentication, the platform is designed to provide a seamless user experience for both learners and administrators.\n\n**Website Overview**\nThe site consists of two main roles:\n**User**: Learners who  join courses.\n**Admin**: Administrators who manage content, categories, and courses.\n\nIt provides access to several pages, including, but not limited to:\n**Home**\n**About**\n**Courses-(Category and Course pages)**\n**Contact**\n**Default Authentication Pages** - Login, Register, etc.\n\n**Page Details**\n\n**1. Home Page**\nThis page is the landing page which welcomes users and invites them to join the platform.\nIt includes a welcome note and highlights of its salient features."
-      }
-    },
-    {
-      "id": 780417994,
-      "name": "ZinSoeTun",
-      "title": "ZinSoeTun",
-      "category": "config",
-      "tags": [
-        "config",
-        "github-config"
-      ],
-      "summary": "Config files for my GitHub profile.",
-      "github": "https://github.com/ZinSoeTun/ZinSoeTun",
-      "homepage": "https://github.com/ZinSoeTun",
-      "updatedAt": "2024-09-17T09:12:25Z",
-      "readme": {
-        "status": "loaded",
-        "text": "<h1>👋 Hi, I'm Zin Soe Tun!</h1>\n<h2>🚀 About Me</h2> <br>\n<p>\n     I am a passionate Web Developer and Software Developer \n     with a strong foundation in both frontend and backend \n     technologies. With a keen eye for detail and a commitment\n     to delivering high-quality code,I strive to create seamless\n     and efficient web applications that solve real-world problems.\n</p><br>\n\n<h2>👀 Passionate about</h2> <br>\n <p>\n         I'm passionate about coding and learning new languages.\n         I thrive in diverse environments and enjoy adapting to new challenges.\n </p>\n\n<h2>🌱 What I'm Learning</h2> <br>\n <p>\n         Currently, I'm immersing myself in programming languages\n         and enhancing my communication skills in English and Korean.\n </p>\n\n<h2>💞️ Eager to</h2> <br>\n <p>\n          I'm eager to collaborate with like-minded individuals who bring\n          diverse perspectives and a positive outlook to every project.\n </p><br>"
       }
     },
     {
