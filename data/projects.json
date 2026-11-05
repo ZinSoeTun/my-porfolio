@@ -1,11 +1,28 @@
 {
   "meta": {
-    "generatedAt": "2026-11-05T15:28:20.429Z",
+    "generatedAt": "2026-11-05T21:59:34.337Z",
     "source": "github-actions-sync",
     "username": "ZinSoeTun",
     "totalRepositories": 55
   },
   "repositories": [
+    {
+      "id": 852606621,
+      "name": "my-porfolio",
+      "title": "My Porfolio",
+      "category": "JavaScript",
+      "tags": [
+        "JavaScript"
+      ],
+      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
+      "github": "https://github.com/ZinSoeTun/my-porfolio",
+      "homepage": "",
+      "updatedAt": "2026-11-05T15:28:26Z",
+      "readme": {
+        "status": "loaded",
+        "text": "Zin Soe Tun Portfolio\n\nA modern personal portfolio website built with HTML, CSS, JavaScript, Bootstrap 5, and custom styling. The interface presents a polished full-stack developer profile through a responsive Bento-style layout, dark and light themes, and an auto-synced GitHub project feed designed for dependable public viewing on GitHub Pages.\n\nOverview\n\nThis portfolio was redesigned to reflect a more experienced professional profile rather than an early-career showcase. The project section no longer depends on manually maintained cards. Instead, public repositories are synchronized into a local JSON feed and rendered automatically as portfolio entries with searchable metadata and stored README highlights.\n\nHighlights\nModern minimalist interface with Bento grid styling\nDark mode and light mode support\nResponsive layout for mobile, tablet, laptop, desktop, and large-screen viewing\nAuto-synced GitHub repository feed for public projects\nStored..."
+      }
+    },
     {
       "id": 1446842154,
       "name": "flutter_lessons_projects",
@@ -21,23 +38,6 @@
       "readme": {
         "status": "loaded",
         "text": "Flutter Learning Projects 🚀\n\nA collection of Flutter projects I built while learning and practicing Flutter development.\n\nThis repository contains projects created during my Flutter learning journey. I'm sharing them publicly so that other developers, students, and beginners can explore the source code, learn from the examples, practice, and build upon them.\n\n**Feel free to explore, use, modify, and improve these projects!**\n\n---\n\n📚 About This Repository\n\nThis repository is a collection of practical Flutter projects developed as part of my learning journey.\n\nThe main goals of sharing these projects are to:\nShare my learning progress and practical coding experience.\nHelp other Flutter beginners learn through real code examples.\nProvide sample projects for practice and experimentation.\nAllow developers to reuse, modify, and improve the code.\nLearn together and grow through community contributions."
-      }
-    },
-    {
-      "id": 852606621,
-      "name": "my-porfolio",
-      "title": "My Porfolio",
-      "category": "JavaScript",
-      "tags": [
-        "JavaScript"
-      ],
-      "summary": "A repository summary is not exposed here yet. Open Details to review the synced README highlights.",
-      "github": "https://github.com/ZinSoeTun/my-porfolio",
-      "homepage": "",
-      "updatedAt": "2026-11-05T06:48:14Z",
-      "readme": {
-        "status": "loaded",
-        "text": "Zin Soe Tun Portfolio\n\nA modern personal portfolio website built with HTML, CSS, JavaScript, Bootstrap 5, and custom styling. The interface presents a polished full-stack developer profile through a responsive Bento-style layout, dark and light themes, and an auto-synced GitHub project feed designed for dependable public viewing on GitHub Pages.\n\nOverview\n\nThis portfolio was redesigned to reflect a more experienced professional profile rather than an early-career showcase. The project section no longer depends on manually maintained cards. Instead, public repositories are synchronized into a local JSON feed and rendered automatically as portfolio entries with searchable metadata and stored README highlights.\n\nHighlights\nModern minimalist interface with Bento grid styling\nDark mode and light mode support\nResponsive layout for mobile, tablet, laptop, desktop, and large-screen viewing\nAuto-synced GitHub repository feed for public projects\nStored..."
       }
     },
     {
